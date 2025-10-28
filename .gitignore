@@ -1,0 +1,36 @@
+# Archivos y Carpetas Generados por Unity
+# -------------------------------------
+/[Ll]ibrary/
+/[Tt]emp/
+/[Oo]bj/
+/[Bb]uilds/
+/[Ll]ogs/
+/Assets/AssetStoreTools/
+# Ignorar archivos de metadatos duplicados
+*.meta
+
+# Archivos de Proyectos de C#
+# -----------------------------
+# Excluye los archivos generados de proyectos de C# (VS Code, Visual Studio, Rider)
+# Los .csproj y .sln deben dejarse para que el IDE sepa cómo abrirlos,
+# pero estos directorios deben excluirse.
+# Ignora directorios de Rider, Visual Studio, VS Code
+.idea/
+.vscode/
+*.csproj
+*.unityproj
+*.sln
+*.suo
+*.user
+*.userprefs
+
+# Carpetas de Compilación y Versiones
+# -----------------------------------
+/[Bb]uilds/
+/Exports/
+
+# Archivos de caché
+# -----------------
+# Cache del sistema operativo y macOS
+.DS_Store
+Thumbs.db
