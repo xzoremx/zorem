@@ -46,20 +46,41 @@
 ---
 
 ## FASE 3: Multijugador
-> Jugar con amigos.
+> Jugar con amigos. Stack: FishNet + SteamNetworkingSockets + Steamworks.NET ($0 infra)
 
-### Tareas
+### Paso 1: Conexión básica
 | Tarea | Sistema |
 |-------|---------|
-| Integrar solución de red (Netcode/Photon/Mirror) | Networking |
-| Sincronización de movimiento y combate (hybrid) | Networking |
-| Relevancia por zonas (sincronizar solo cercanos) | Networking |
-| Lag compensation para melee | Networking |
-| Sistema de salas (crear sala, invitar amigos) | Rooms |
-| Sincronización de loot, inventario y curación | Networking |
+| Instalar FishNet (free) desde Asset Store / GitHub | Networking |
+| Instalar Steamworks.NET | Steam |
+| Configurar SteamNetworkingSockets Transport en FishNet | Networking |
+| Conectar 2 jugadores via Steam (listen server) | Networking |
+
+### Paso 2: Movimiento en red
+| Tarea | Sistema |
+|-------|---------|
+| Agregar PredictedObject al PlayerController (prediction built-in) | Networking |
+| Interpolación de jugadores remotos (FishNet lo maneja) | Networking |
+| Verificar movimiento Symbiote sincronizado | Networking |
+
+### Paso 3: Salas y combate en red
+| Tarea | Sistema |
+|-------|---------|
+| Steam Lobby API: crear sala FriendsOnly/Private | Rooms |
+| Invitaciones via Steam overlay | Rooms |
+| Combate melee server-authoritative (host valida hits) | Networking |
+| Lag compensation: historial de hitboxes + rewind por RTT | Networking |
+
+### Paso 4: Sincronización completa
+| Tarea | Sistema |
+|-------|---------|
+| ObserverManager: relevancia por distancia (solo sync cercanos) | Networking |
+| Sync loot, inventario, curación con SyncVars + RPCs | Networking |
+| Skills server-authoritative (prevenir trampas) | Networking |
+| Escalar test a 4-20 jugadores | Networking |
 
 ### Entregable
-> Jugadores crean sala, invitan amigos, pelean y recogen loot con latencia aceptable.
+> Jugadores crean sala via Steam, invitan amigos, pelean con combate melee fluido (0ms input delay local, lag compensado) y recogen loot sincronizado.
 
 ---
 
@@ -110,12 +131,23 @@
 ## Resumen Visual
 
 ```
-FASE 1          FASE 2          FASE 3          FASE 4          FASE 5
-Fundación  ──►  Identidad  ──►  Multi  ──►  Mundo  ──►  Steam
-                                jugador
-Movimiento      4 Personajes    Salas       4 Mapas         VFX
-Combate         4×Skills        Netcode     4 Bosses        Ragdoll
-Symbiote        Curación        Rooms       Audio           Steamworks
-Parkour         Inventario      Lag Comp    Boss Spawns     Optimización
-Cámara          HUD             Sync        Drops           Publicación
+FASE 1          FASE 2          FASE 3                    FASE 4          FASE 5
+Fundación  ──►  Identidad  ──►  Multijugador         ──►  Mundo  ──►  Steam
+
+Movimiento      4 Personajes    FishNet + Steam           4 Mapas         VFX
+Combate         4×Skills        PredictedObject           4 Bosses        Ragdoll
+Symbiote        Curación        Steam Lobbies             Audio           Steamworks
+Parkour         Inventario      Lag Comp (hitbox rewind)   Boss Spawns     Optimización
+Cámara          HUD             ObserverManager (zonas)   Drops           Publicación
 ```
+
+## Stack Tecnológico
+
+| Componente | Tecnología | Costo |
+|-----------|-----------|-------|
+| Motor | Unity | $0 (personal) |
+| Networking | FishNet (Fish-Networking) | $0 |
+| Transporte | SteamNetworkingSockets (Valve SDR) | $0 |
+| Steam API | Steamworks.NET | $0 |
+| Salas | Steam Lobby API | $0 |
+| **Total infraestructura** | | **$0** |

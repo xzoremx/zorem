@@ -60,18 +60,87 @@
 
 ## Prioridad 3: MULTIJUGADOR
 
-### 3.1 Netcode Hybrid
-- Cliente predice, servidor valida
-- Relevancia por zonas (solo sincronizar jugadores cercanos)
-- **Complejidad:** Muy Alta
+### Stack Tecnológico Definido
+| Componente | Tecnología | Costo |
+|-----------|-----------|-------|
+| **Networking Framework** | FishNet (Fish-Networking) | $0 (free, open source) |
+| **Transporte** | SteamNetworkingSockets Transport | $0 (Valve SDR relay) |
+| **Steam Integration** | Steamworks.NET | $0 (open source) |
+| **Salas/Lobbies** | Steam Lobby API (Steamworks.NET) | $0 |
+| **Fallback** | Mirror + Steam Transport (si FishNet falla) | $0 |
 
-### 3.2 Sistema de Salas (Rooms)
-- Jugadores crean salas privadas e invitan amigos
-- Sin matchmaking automático
+**Costo total de infraestructura: $0**
+
+### ¿Por qué FishNet?
+- **PredictedObject** built-in: client-side prediction + server reconciliation automático
+- Soporte nativo para SteamNetworkingSockets (Valve relay, $0)
+- ObserverManager con condiciones de distancia (relevancia por zonas)
+- API moderna, ideal para solo dev
+- Alternativa Pro ($150 one-time) para optimizaciones de bandwidth
+
+### ¿Por qué NO otras opciones?
+- **Mirror:** Viable pero sin prediction built-in (semanas de trabajo extra)
+- **Unity NGO:** Empuja hacia Unity Relay (costo), prediction manual difícil
+- **Photon Fusion:** Técnicamente superior pero costo recurrente ($95+/mes por CCU)
+
+### Arquitectura de Red
+```
+Steam Lobby (Steamworks.NET)
+    │
+    ▼
+Jugador crea sala privada → Amigos ven invitación via Steam overlay
+    │
+    ▼
+Host inicia FishNet server (listen server mode)
+    │
+    ▼
+Clientes conectan via SteamNetworkingSockets (SDR relay de Valve)
+    │
+    ▼
+Sincronización:
+  - Movimiento jugador:  PredictedObject (prediction + reconciliation built-in)
+  - Jugadores remotos:   Interpolación (FishNet lo maneja)
+  - Combate melee:       Server-authoritative + lag compensation (hitbox rewind)
+  - Skills/Items:        Server-authoritative con SyncVars
+  - Boss AI:             Corre solo en host, estado sincronizado a clientes
+  - Loot:                Server-authoritative (spawn + pickup)
+  - Curación:            Server-validated (prevenir trampas)
+```
+
+### 3.1 Integración FishNet + Steam
+- Configurar FishNet con SteamNetworkingSockets transport
+- Conectar dos jugadores a través de Steam lobbies
+- Listen server mode (host = jugador + servidor)
+- **Complejidad:** Alta
+
+### 3.2 Client-Side Prediction (Movimiento)
+- PredictedObject de FishNet en PlayerController
+- El jugador se mueve al instante, servidor valida después
+- Reconciliación automática si hay discrepancia
+- **Complejidad:** Media (FishNet lo facilita)
+
+### 3.3 Sistema de Salas (Steam Lobbies)
+- CreateLobby con tipo FriendsOnly o Private
+- Invitación via Steam overlay
+- Metadata del lobby (mapa elegido, max jugadores, configuración)
 - **Complejidad:** Media
 
-### 3.3 Lag Compensation Melee
-- Compensación de latencia para hits cuerpo a cuerpo
+### 3.4 Lag Compensation Melee
+- Historial de hitboxes por frame (buffer de N frames)
+- Al validar hit: rebobinar hitbox del objetivo según RTT del atacante
+- TimeManager de FishNet para timing preciso
+- **Complejidad:** Alta
+
+### 3.5 Relevancia por Zonas
+- ObserverManager de FishNet con condiciones de distancia
+- Solo sincronizar jugadores y entidades cercanas
+- Reduce bandwidth en mapas grandes con 4-20 jugadores
+- **Complejidad:** Media
+
+### 3.6 Sincronización de Sistemas
+- Loot, inventario, curación: SyncVars + RPCs
+- Boss AI: ejecuta en host, replica estado a clientes
+- Skills: server-authoritative (prevenir trampas)
 - **Complejidad:** Alta
 
 ---
