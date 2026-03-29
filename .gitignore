@@ -4,16 +4,25 @@
 
 # Archivos y Carpetas Generados por Unity
 # -----------------------------------------
-Unity/[Ll]ibrary/
-Unity/[Tt]emp/
-Unity/[Oo]bj/
-Unity/[Ll]ogs/
-Unity/[Bb]uild/
-Unity/[Bb]uilds/
-Unity/Assets/AssetStoreTools/
-Unity/UserSettings/
+/[Ll]ibrary/
+/[Tt]emp/
+/[Oo]bj/
+/[Ll]ogs/
+/[Bb]uild/
+/[Bb]uilds/
+/[Uu]ser[Ss]ettings/
+/[Mm]emoryCaptures/
+/[Rr]ecordings/
+/[Cc]rashReports/
+/Assets/AssetStoreTools/
+/.vs/
+/ExportedObj/
+/.consulo/
 
-# Archivos de Proyectos de C#
+# ¡IMPORTANTE! No ignorar los archivos meta de los assets en Unity
+!*.[Mm]eta
+
+# Archivos de Proyectos de C# generados
 # -----------------------------
 *.csproj
 *.unityproj
@@ -21,11 +30,6 @@ Unity/UserSettings/
 *.suo
 *.user
 *.userprefs
-
-# IDEs
-# -----
-.idea/
-.vscode/
 *.pidb
 *.booproj
 *.svd
@@ -34,16 +38,28 @@ Unity/UserSettings/
 *.opendb
 *.VC.db
 
-# Carpetas de Compilación y Exportación
+# Configuración y caché de IDEs
+# -----
+.idea/
+.vscode/
+
+# Carpetas de Compilación y Exportación Root
 # ---------------------------------------
 Builds/
 
-# Archivos de caché del SO
+# Archivos de caché del Sistema Operativo
 # -------------------------
 .DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
 Thumbs.db
 
 # Archivos temporales de Blender
 # --------------------------------
 *.blend1
 *.blend2
+*.blend@
+*.crash
