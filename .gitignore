@@ -1,22 +1,20 @@
+# ========================================
+# Proyecto ZoremGame - .gitignore
+# ========================================
+
 # Archivos y Carpetas Generados por Unity
-# -------------------------------------
-/[Ll]ibrary/
-/[Tt]emp/
-/[Oo]bj/
-/[Bb]uilds/
-/[Ll]ogs/
-/Assets/AssetStoreTools/
-# Ignorar archivos de metadatos duplicados
-*.meta
+# -----------------------------------------
+Unity/[Ll]ibrary/
+Unity/[Tt]emp/
+Unity/[Oo]bj/
+Unity/[Ll]ogs/
+Unity/[Bb]uild/
+Unity/[Bb]uilds/
+Unity/Assets/AssetStoreTools/
+Unity/UserSettings/
 
 # Archivos de Proyectos de C#
 # -----------------------------
-# Excluye los archivos generados de proyectos de C# (VS Code, Visual Studio, Rider)
-# Los .csproj y .sln deben dejarse para que el IDE sepa cómo abrirlos,
-# pero estos directorios deben excluirse.
-# Ignora directorios de Rider, Visual Studio, VS Code
-.idea/
-.vscode/
 *.csproj
 *.unityproj
 *.sln
@@ -24,13 +22,28 @@
 *.user
 *.userprefs
 
-# Carpetas de Compilación y Versiones
-# -----------------------------------
-/[Bb]uilds/
-/Exports/
+# IDEs
+# -----
+.idea/
+.vscode/
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
 
-# Archivos de caché
-# -----------------
-# Cache del sistema operativo y macOS
+# Carpetas de Compilación y Exportación
+# ---------------------------------------
+Builds/
+
+# Archivos de caché del SO
+# -------------------------
 .DS_Store
 Thumbs.db
+
+# Archivos temporales de Blender
+# --------------------------------
+*.blend1
+*.blend2
