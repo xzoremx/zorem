@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(wc -w MCP/docs/*.md MCP/INDEX.md)"
+    ]
+  }
+}
