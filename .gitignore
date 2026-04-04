@@ -57,8 +57,10 @@ Builds/
 ehthumbs.db
 Thumbs.db
 
-# Archivos temporales de Blender
-# --------------------------------
+# Blender - archivos de trabajo (binarios pesados, usar Git LFS si es necesario)
+# -------------------------------------------------------------------------------
+BlenderAssets/**/*.blend
+!BlenderAssets/**/.gitkeep
 *.blend1
 *.blend2
 *.blend@
