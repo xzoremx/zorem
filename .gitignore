@@ -63,3 +63,10 @@ Thumbs.db
 *.blend2
 *.blend@
 *.crash
+
+# MCP Servers - dependencias y compilados (generados, no commitear)
+# ------------------------------------------------------------------
+MCP/servers/unity/node_modules/
+MCP/servers/unity/build/
+MCP/servers/blender/node_modules/
+MCP/servers/blender/build/
