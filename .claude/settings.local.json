@@ -1,7 +1,27 @@
 {
+  "enabledMcpjsonServers": ["unity", "blender"],
   "permissions": {
     "allow": [
-      "Bash(wc -w MCP/docs/*.md MCP/INDEX.md)"
+      "Bash(wc -w MCP/docs/*.md MCP/INDEX.md)",
+      "Bash(npm --version)",
+      "Bash(tsc --version)",
+      "Bash(mkdir -p \"C:/Users/renat/Desktop/ZoremGame/MCP/servers/unity/src/tools\")",
+      "Bash(mkdir -p \"C:/Users/renat/Desktop/ZoremGame/MCP/servers/unity/build\")",
+      "Bash(mkdir -p \"C:/Users/renat/Desktop/ZoremGame/MCP/servers/blender/src/tools\")",
+      "Bash(mkdir -p \"C:/Users/renat/Desktop/ZoremGame/MCP/servers/blender/build\")",
+      "Bash(mkdir -p \"C:/Users/renat/Desktop/ZoremGame/MCP/servers/blender/python\")",
+      "Bash(npm install:*)",
+      "Bash(npx tsc:*)",
+      "Bash(timeout 5 node MCP/servers/unity/build/index.js)",
+      "Bash(\"C:/Users/renat/AppData/Local/Microsoft/WindowsApps/blender-launcher.exe\" --version)",
+      "Bash(cmd /c \"blender --version\")",
+      "Bash(cmd:*)",
+      "Bash(powershell:*)",
+      "Bash(\"C:/Program Files/WindowsApps/BlenderFoundation.Blender_5.1.0.0_x64__ppwjx1n5r4v9t/Blender/blender.exe\" --version)",
+      "Bash(timeout 5 \"C:/Users/renat/AppData/Local/Microsoft/WindowsApps/BlenderFoundation.Blender_ppwjx1n5r4v9t/blender-launcher.exe\" --background --version)",
+      "Bash(echo \"EXIT: $?\")",
+      "Bash(\"C:/Program Files/Blender Foundation/Blender 5.1/blender.exe\" --version)",
+      "Bash(timeout 5 node MCP/servers/blender/build/index.js)"
     ]
   }
 }

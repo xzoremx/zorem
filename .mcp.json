@@ -1,0 +1,24 @@
+{
+  "mcpServers": {
+    "unity": {
+      "command": "node",
+      "args": ["C:/Users/renat/Desktop/ZoremGame/MCP/servers/unity/build/index.js"],
+      "env": {
+        "UNITY_PROJECT_PATH": "C:/Users/renat/Desktop/ZoremGame",
+        "UNITY_EXECUTABLE": "C:/Program Files/Unity/Hub/Editor/2022.3.39f1/Editor/Unity.exe",
+        "ASSET_STORE_PATH": "Assets",
+        "AUTO_COMPILE": "false"
+      }
+    },
+    "blender": {
+      "command": "node",
+      "args": ["C:/Users/renat/Desktop/ZoremGame/MCP/servers/blender/build/index.js"],
+      "env": {
+        "BLENDER_EXECUTABLE": "C:/Program Files/Blender Foundation/Blender 5.1/blender.exe",
+        "OUTPUT_PATH": "C:/Users/renat/Desktop/ZoremGame/BlenderAssets",
+        "BLENDER_SCRIPTS": "C:/Users/renat/Desktop/ZoremGame/MCP/servers/blender/python",
+        "EXPORT_FORMAT": "fbx"
+      }
+    }
+  }
+}
