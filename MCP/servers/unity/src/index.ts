@@ -135,9 +135,17 @@ async function handleCreateScript(input: ScriptCreateInput) {
 
   await fs.ensureDir(path.dirname(fullPath));
   const namespace = input.namespace || "ZoremGame";
-  const wrappedContent = input.content.includes("namespace ")
-    ? input.content
-    : `namespace ${namespace}\n{\n${input.content}\n}\n`;
+  let wrappedContent: string;
+  if (input.content.includes("namespace ")) {
+    wrappedContent = input.content;
+  } else {
+    // Separar using directives del resto del código
+    const lines = input.content.split("\n");
+    const usingLines = lines.filter((l) => l.trimStart().startsWith("using "));
+    const bodyLines = lines.filter((l) => !l.trimStart().startsWith("using "));
+    const usingBlock = usingLines.length > 0 ? usingLines.join("\n") + "\n\n" : "";
+    wrappedContent = `${usingBlock}namespace ${namespace}\n{\n${bodyLines.join("\n")}\n}\n`;
+  }
 
   await fs.writeFile(fullPath, wrappedContent, "utf-8");
 

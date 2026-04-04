@@ -1,5 +1,4 @@
 {
-  "enabledMcpjsonServers": ["unity", "blender"],
   "permissions": {
     "allow": [
       "Bash(wc -w MCP/docs/*.md MCP/INDEX.md)",
@@ -21,7 +20,18 @@
       "Bash(timeout 5 \"C:/Users/renat/AppData/Local/Microsoft/WindowsApps/BlenderFoundation.Blender_ppwjx1n5r4v9t/blender-launcher.exe\" --background --version)",
       "Bash(echo \"EXIT: $?\")",
       "Bash(\"C:/Program Files/Blender Foundation/Blender 5.1/blender.exe\" --version)",
-      "Bash(timeout 5 node MCP/servers/blender/build/index.js)"
+      "Bash(timeout 5 node MCP/servers/blender/build/index.js)",
+      "mcp__unity__list_scripts",
+      "mcp__unity__create_script",
+      "Bash(gh repo:*)",
+      "WebFetch(domain:github.com)",
+      "mcp__UnityMCP__read_console",
+      "mcp__UnityMCP__manage_scene",
+      "mcp__UnityMCP__delete_script"
     ]
-  }
+  },
+  "enabledMcpjsonServers": [
+    "unity",
+    "blender"
+  ]
 }
