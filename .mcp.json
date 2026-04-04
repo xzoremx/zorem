@@ -4,13 +4,10 @@
       "url": "http://localhost:8080/mcp"
     },
     "blender": {
-      "command": "node",
-      "args": ["C:/Users/renat/Desktop/ZoremGame/MCP/servers/blender/build/index.js"],
+      "command": "C:/Users/renat/.local/bin/uvx.exe",
+      "args": ["blender-mcp"],
       "env": {
-        "BLENDER_EXECUTABLE": "C:/Program Files/Blender Foundation/Blender 5.1/blender.exe",
-        "OUTPUT_PATH": "C:/Users/renat/Desktop/ZoremGame/BlenderAssets",
-        "BLENDER_SCRIPTS": "C:/Users/renat/Desktop/ZoremGame/MCP/servers/blender/python",
-        "EXPORT_FORMAT": "fbx"
+        "BLENDER_PORT": "9876"
       }
     }
   }
