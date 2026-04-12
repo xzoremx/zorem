@@ -80,7 +80,7 @@ namespace ZoremGame.Player
         {
             if (tpCamera == null)
             {
-                tpCamera = FindFirstObjectByType<ThirdPersonCamera>();
+                tpCamera = FindObjectOfType<ThirdPersonCamera>();
                 if (tpCamera == null)
                     return;
                 if (tpCamera)
