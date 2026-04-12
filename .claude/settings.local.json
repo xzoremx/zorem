@@ -37,7 +37,11 @@
       "mcp__UnityMCP__manage_asset",
       "mcp__UnityMCP__manage_components",
       "mcp__UnityMCP__manage_editor",
-      "mcp__UnityMCP__manage_build"
+      "mcp__UnityMCP__manage_build",
+      "mcp__blender__get_scene_info",
+      "mcp__blender__execute_blender_code",
+      "mcp__blender__get_viewport_screenshot",
+      "Bash(git lfs:*)"
     ]
   },
   "enabledMcpjsonServers": [

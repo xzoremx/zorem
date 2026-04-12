@@ -57,9 +57,9 @@ Builds/
 ehthumbs.db
 Thumbs.db
 
-# Blender - archivos de trabajo (binarios pesados, usar Git LFS si es necesario)
+# Blender - archivos de trabajo (gestionados con Git LFS)
 # -------------------------------------------------------------------------------
-BlenderAssets/**/*.blend
+# Los .blend están tracked por Git LFS (.gitattributes)
 !BlenderAssets/**/.gitkeep
 *.blend1
 *.blend2
