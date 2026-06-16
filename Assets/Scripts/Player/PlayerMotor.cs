@@ -48,7 +48,7 @@ namespace ZoremGame.Player
         #region Components
         internal Animator animator;
         internal Rigidbody _rigidbody;
-        internal PhysicMaterial frictionPhysics, maxFrictionPhysics, slippyPhysics;
+        internal PhysicsMaterial frictionPhysics, maxFrictionPhysics, slippyPhysics;
         internal CapsuleCollider _capsuleCollider;
         #endregion
 
@@ -88,23 +88,23 @@ namespace ZoremGame.Player
             animator = GetComponent<Animator>();
             animator.updateMode = AnimatorUpdateMode.Normal;
 
-            frictionPhysics = new PhysicMaterial();
+            frictionPhysics = new PhysicsMaterial();
             frictionPhysics.name = "frictionPhysics";
             frictionPhysics.staticFriction = .25f;
             frictionPhysics.dynamicFriction = .25f;
-            frictionPhysics.frictionCombine = PhysicMaterialCombine.Multiply;
+            frictionPhysics.frictionCombine = PhysicsMaterialCombine.Multiply;
 
-            maxFrictionPhysics = new PhysicMaterial();
+            maxFrictionPhysics = new PhysicsMaterial();
             maxFrictionPhysics.name = "maxFrictionPhysics";
             maxFrictionPhysics.staticFriction = 1f;
             maxFrictionPhysics.dynamicFriction = 1f;
-            maxFrictionPhysics.frictionCombine = PhysicMaterialCombine.Maximum;
+            maxFrictionPhysics.frictionCombine = PhysicsMaterialCombine.Maximum;
 
-            slippyPhysics = new PhysicMaterial();
+            slippyPhysics = new PhysicsMaterial();
             slippyPhysics.name = "slippyPhysics";
             slippyPhysics.staticFriction = 0f;
             slippyPhysics.dynamicFriction = 0f;
-            slippyPhysics.frictionCombine = PhysicMaterialCombine.Minimum;
+            slippyPhysics.frictionCombine = PhysicsMaterialCombine.Minimum;
 
             _rigidbody = GetComponent<Rigidbody>();
             _capsuleCollider = GetComponent<CapsuleCollider>();
@@ -149,8 +149,8 @@ namespace ZoremGame.Player
             Vector3 targetPosition = (useRootMotion ? animator.rootPosition : _rigidbody.position) + _direction * (stopMove ? 0 : moveSpeed) * Time.deltaTime;
             Vector3 targetVelocity = (targetPosition - transform.position) / Time.deltaTime;
 
-            targetVelocity.y = _rigidbody.velocity.y;
-            _rigidbody.velocity = targetVelocity;
+            targetVelocity.y = _rigidbody.linearVelocity.y;
+            _rigidbody.linearVelocity = targetVelocity;
         }
 
         public virtual void CheckSlopeLimit()
@@ -212,9 +212,9 @@ namespace ZoremGame.Player
                 isJumping = false;
             }
 
-            var vel = _rigidbody.velocity;
+            var vel = _rigidbody.linearVelocity;
             vel.y = jumpHeight;
-            _rigidbody.velocity = vel;
+            _rigidbody.linearVelocity = vel;
         }
 
         public virtual void AirControl()
@@ -236,8 +236,8 @@ namespace ZoremGame.Player
             Vector3 targetPosition = _rigidbody.position + (moveDirection * airSpeed) * Time.deltaTime;
             Vector3 targetVelocity = (targetPosition - transform.position) / Time.deltaTime;
 
-            targetVelocity.y = _rigidbody.velocity.y;
-            _rigidbody.velocity = Vector3.Lerp(_rigidbody.velocity, targetVelocity, airSmooth * Time.deltaTime);
+            targetVelocity.y = _rigidbody.linearVelocity.y;
+            _rigidbody.linearVelocity = Vector3.Lerp(_rigidbody.linearVelocity, targetVelocity, airSmooth * Time.deltaTime);
         }
 
         protected virtual bool jumpFwdCondition
@@ -270,7 +270,7 @@ namespace ZoremGame.Player
                 if (groundDistance >= groundMaxDistance)
                 {
                     isGrounded = false;
-                    verticalVelocity = _rigidbody.velocity.y;
+                    verticalVelocity = _rigidbody.linearVelocity.y;
                     if (!isJumping)
                     {
                         _rigidbody.AddForce(transform.up * extraGravity * Time.deltaTime, ForceMode.VelocityChange);
