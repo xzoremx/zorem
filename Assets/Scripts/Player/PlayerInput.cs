@@ -10,6 +10,8 @@ namespace ZoremGame.Player
         public KeyCode jumpInput = KeyCode.Space;
         public KeyCode strafeInput = KeyCode.Tab;
         public KeyCode sprintInput = KeyCode.LeftShift;
+        [Tooltip("Con Sprint activo = Slide. Sin Sprint = Crouch.")]
+        public KeyCode crouchSlideInput = KeyCode.LeftControl;
 
         [Header("Camera Input")]
         public string rotateCameraXInput = "Mouse X";
@@ -99,6 +101,7 @@ namespace ZoremGame.Player
             CameraInput();
             SprintInput();
             StrafeInput();
+            CrouchSlideInput();
             JumpInput();
         }
 
@@ -156,7 +159,43 @@ namespace ZoremGame.Player
         protected virtual void JumpInput()
         {
             if (Input.GetKeyDown(jumpInput) && JumpConditions())
+            {
+                if (playerController.isSliding)
+                    playerController.CancelSlide();
+
                 playerController.Jump();
+            }
+        }
+
+        protected virtual bool SlideConditions()
+        {
+            return playerController.isSprinting && !playerController.isStrafing && !playerController.isCrouching
+                && playerController.isGrounded && !playerController.isJumping && playerController.input.sqrMagnitude > 0.1f;
+        }
+
+        protected virtual bool CrouchConditions()
+        {
+            return !playerController.isSprinting && !playerController.isSliding
+                && playerController.isGrounded && !playerController.isJumping;
+        }
+
+        // Misma tecla para ambos: con Sprint sostenido dispara Slide, sin Sprint dispara Crouch.
+        protected virtual void CrouchSlideInput()
+        {
+            if (Input.GetKeyDown(crouchSlideInput))
+            {
+                if (!playerController.isSliding && SlideConditions())
+                    playerController.Slide();
+                else if (!playerController.isCrouching && CrouchConditions())
+                    playerController.Crouch();
+            }
+            else if (Input.GetKeyUp(crouchSlideInput))
+            {
+                if (playerController.isSliding)
+                    playerController.CancelSlide();
+                if (playerController.isCrouching)
+                    playerController.StandUp();
+            }
         }
         #endregion
     }

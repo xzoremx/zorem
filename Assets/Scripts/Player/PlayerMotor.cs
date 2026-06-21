@@ -43,6 +43,15 @@ namespace ZoremGame.Player
         public float groundMinDistance = 0.25f;
         public float groundMaxDistance = 0.5f;
         [Range(30, 80)] public float slopeLimit = 75f;
+
+        [Header("- Slide")]
+        public float slideDuration = 1f;
+        public float slideSpeed = 8f;
+        [Range(0.2f, 1f)] public float slideColliderHeightMultiplier = 0.5f;
+
+        [Header("- Crouch")]
+        [Range(0.1f, 1f)] public float crouchSpeedMultiplier = 0.5f;
+        [Range(0.3f, 1f)] public float crouchColliderHeightMultiplier = 0.6f;
         #endregion
 
         #region Components
@@ -61,6 +70,8 @@ namespace ZoremGame.Player
         }
         internal bool isGrounded { get; set; }
         internal bool isSprinting { get; set; }
+        internal bool isSliding { get; private set; }
+        internal bool isCrouching { get; private set; }
         public bool stopMove { get; protected set; }
 
         internal float inputMagnitude;
@@ -72,6 +83,9 @@ namespace ZoremGame.Player
         internal float heightReached;
         internal float jumpCounter;
         internal float groundDistance;
+        internal float slideTimer;
+        internal Vector3 slideDirection;
+        internal bool wantsToStandUp;
         internal RaycastHit groundHit;
         internal bool lockMovement = false;
         internal bool lockRotation = false;
@@ -119,6 +133,8 @@ namespace ZoremGame.Player
         public virtual void UpdateMotor()
         {
             CheckGround();
+            ControlSlideBehaviour();
+            ControlCrouchBehaviour();
             CheckSlopeLimit();
             ControlJumpBehaviour();
             AirControl();
@@ -127,10 +143,13 @@ namespace ZoremGame.Player
         #region Locomotion
         public virtual void SetControllerMoveSpeed(MovementSpeed speed)
         {
-            if (speed.walkByDefault)
-                moveSpeed = Mathf.Lerp(moveSpeed, isSprinting ? speed.runningSpeed : speed.walkSpeed, speed.movementSmooth * Time.deltaTime);
-            else
-                moveSpeed = Mathf.Lerp(moveSpeed, isSprinting ? speed.sprintSpeed : speed.runningSpeed, speed.movementSmooth * Time.deltaTime);
+            float target = speed.walkByDefault
+                ? (isSprinting ? speed.runningSpeed : speed.walkSpeed)
+                : (isSprinting ? speed.sprintSpeed : speed.runningSpeed);
+
+            if (isCrouching) target *= crouchSpeedMultiplier;
+
+            moveSpeed = Mathf.Lerp(moveSpeed, target, speed.movementSmooth * Time.deltaTime);
         }
 
         public virtual void MoveCharacter(Vector3 _direction)
@@ -248,6 +267,100 @@ namespace ZoremGame.Player
                 Vector3 p2 = p1 + Vector3.up * _capsuleCollider.height;
                 return Physics.CapsuleCastAll(p1, p2, _capsuleCollider.radius * 0.5f, transform.forward, 0.6f, groundLayer).Length == 0;
             }
+        }
+        #endregion
+
+        #region Slide Methods
+        protected virtual void StartSlide()
+        {
+            if (isSliding) return;
+
+            isSliding = true;
+            slideTimer = slideDuration;
+            slideDirection = moveDirection.sqrMagnitude > 0.01f ? moveDirection.normalized : transform.forward;
+            lockMovement = true;
+            lockRotation = true;
+            SetColliderHeight(slideColliderHeightMultiplier);
+        }
+
+        protected virtual void EndSlide()
+        {
+            if (!isSliding) return;
+
+            isSliding = false;
+            lockMovement = false;
+            lockRotation = false;
+            RestoreColliderHeight();
+        }
+
+        protected virtual void ControlSlideBehaviour()
+        {
+            if (!isSliding) return;
+
+            slideTimer -= Time.deltaTime;
+            if (slideTimer <= 0f || !isGrounded)
+            {
+                EndSlide();
+                return;
+            }
+
+            Vector3 velocity = slideDirection * slideSpeed;
+            velocity.y = _rigidbody.linearVelocity.y;
+            _rigidbody.linearVelocity = velocity;
+        }
+
+        // Reduce el collider manteniendo la base fija para no clipear el suelo.
+        protected virtual void SetColliderHeight(float heightMultiplier)
+        {
+            float newHeight = colliderHeight * heightMultiplier;
+            float heightDelta = colliderHeight - newHeight;
+            _capsuleCollider.height = newHeight;
+            _capsuleCollider.center = colliderCenter - Vector3.up * (heightDelta * 0.5f);
+        }
+
+        protected virtual void RestoreColliderHeight()
+        {
+            _capsuleCollider.height = colliderHeight;
+            _capsuleCollider.center = colliderCenter;
+        }
+        #endregion
+
+        #region Crouch Methods
+        protected virtual void StartCrouch()
+        {
+            if (isCrouching) return;
+
+            isCrouching = true;
+            wantsToStandUp = false;
+            SetColliderHeight(crouchColliderHeightMultiplier);
+        }
+
+        // No se levanta de inmediato: espera a que haya espacio libre arriba.
+        protected virtual void StopCrouch()
+        {
+            if (!isCrouching) return;
+            wantsToStandUp = true;
+        }
+
+        protected virtual void ControlCrouchBehaviour()
+        {
+            if (!isCrouching || !wantsToStandUp) return;
+
+            if (CanStandUp())
+            {
+                isCrouching = false;
+                wantsToStandUp = false;
+                RestoreColliderHeight();
+            }
+        }
+
+        protected virtual bool CanStandUp()
+        {
+            float clearance = colliderHeight - _capsuleCollider.height;
+            if (clearance <= 0.01f) return true;
+
+            Vector3 origin = transform.position + Vector3.up * (_capsuleCollider.center.y + _capsuleCollider.height * 0.5f);
+            return !Physics.SphereCast(origin, _capsuleCollider.radius * 0.9f, Vector3.up, out _, clearance, groundLayer);
         }
         #endregion
 

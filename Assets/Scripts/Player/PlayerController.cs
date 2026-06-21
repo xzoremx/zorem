@@ -118,5 +118,25 @@ namespace ZoremGame.Player
             else
                 animator.CrossFadeInFixedTime("JumpMove", .2f);
         }
+
+        public virtual void Slide()
+        {
+            StartSlide();
+        }
+
+        public virtual void CancelSlide()
+        {
+            EndSlide();
+        }
+
+        public virtual void Crouch()
+        {
+            StartCrouch();
+        }
+
+        public virtual void StandUp()
+        {
+            StopCrouch();
+        }
     }
 }
