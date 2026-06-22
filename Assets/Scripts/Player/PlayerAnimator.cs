@@ -13,6 +13,7 @@ namespace ZoremGame.Player
         private int hashIsSprinting;
         private int hashGroundDistance;
         private int hashIsSliding;
+        private int hashIsCrouching;
         #endregion
 
         #region Animation Speeds
@@ -31,6 +32,7 @@ namespace ZoremGame.Player
             hashIsSprinting = Animator.StringToHash("IsSprinting");
             hashGroundDistance = Animator.StringToHash("GroundDistance");
             hashIsSliding = Animator.StringToHash("IsSliding");
+            hashIsCrouching = Animator.StringToHash("IsCrouching");
         }
 
         public virtual void UpdateAnimator()
@@ -41,6 +43,7 @@ namespace ZoremGame.Player
             animator.SetBool(hashIsSprinting, isSprinting);
             animator.SetBool(hashIsGrounded, isGrounded);
             animator.SetBool(hashIsSliding, isSliding);
+            animator.SetBool(hashIsCrouching, isCrouching);
             animator.SetFloat(hashGroundDistance, groundDistance);
 
             if (isStrafing)
