@@ -1,0 +1,1395 @@
+- generic [ref=e2]:
+  - banner [ref=e4]:
+    - generic [ref=e6]:
+      - link "RaGEZONE - MMO Development Forums" [ref=e8] [cursor=pointer]:
+        - /url: https://forum.ragezone.com
+        - img "RaGEZONE - MMO Development Forums" [ref=e10]
+      - generic [ref=e11]:
+        - link "Old School Tera Online - https://oldschool.to" [ref=e13] [cursor=pointer]:
+          - /url: https://oldschool.to
+          - img "Old School Tera Online - https://oldschool.to" [ref=e14]
+        - link "Place your Ad here for £40.00 per Month!" [ref=e16] [cursor=pointer]:
+          - /url: /ads-manager/packages/1/create-ad
+  - navigation [ref=e18]:
+    - generic [ref=e19]:
+      - list [ref=e22]:
+        - listitem [ref=e23]:
+          - link "Forums" [ref=e25] [cursor=pointer]:
+            - /url: /
+        - listitem [ref=e26]:
+          - generic [ref=e27]:
+            - link "Downloads" [ref=e28] [cursor=pointer]:
+              - /url: /downloads/categories/server-files.3/
+            - button "Toggle expanded" [ref=e29] [cursor=pointer]
+        - listitem [ref=e30]:
+          - link "Top Sites" [ref=e32] [cursor=pointer]:
+            - /url: /topsites/
+        - listitem [ref=e33]:
+          - link "Advertise On RZ" [ref=e35] [cursor=pointer]:
+            - /url: https://forum.ragezone.com/threads/how-to-use-the-ragezone-forum-advertising-system.1212910/
+      - generic [ref=e37]:
+        - link "Log in" [ref=e38] [cursor=pointer]:
+          - /url: /login/
+          - text: Log in
+        - link "Register" [ref=e40] [cursor=pointer]:
+          - /url: /login/register
+          - text: Register
+  - generic [ref=e43]:
+    - list [ref=e44]:
+      - listitem [ref=e45]:
+        - link "The MMO Community" [ref=e46] [cursor=pointer]:
+          - /url: /#the-mmo-community.55
+      - listitem [ref=e47]:
+        - link "MMO Server Developments" [ref=e48] [cursor=pointer]:
+          - /url: /community/mmo-server-developments.168/
+      - listitem [ref=e49]:
+        - link "Priston Tale" [ref=e50] [cursor=pointer]:
+          - /url: /community/priston-tale.286/
+      - listitem [ref=e51]:
+        - link "Priston Tale Releases" [ref=e52] [cursor=pointer]:
+          - /url: /community/priston-tale-releases.399/
+    - generic [ref=e53]:
+      - heading "PT Source x64 + DX11 + SLikeNet + RmlUI Source" [level=1] [ref=e55]:
+        - text: PT Source x64 + DX11 + SLikeNet + RmlUI
+        - generic [ref=e56]: Source
+      - list [ref=e59]:
+        - listitem [ref=e60]:
+          - img "Thread starter" [ref=e62]
+          - generic [ref=e64]: Thread starter
+          - link "bocadecao" [ref=e65] [cursor=pointer]:
+            - /url: /members/bocadecao.704648/
+        - listitem [ref=e66]:
+          - text: ·
+          - img "Start date" [ref=e68]
+          - generic [ref=e70]: Start date
+          - link "Jan 7, 2022" [ref=e71] [cursor=pointer]:
+            - /url: /threads/pt-source-x64-dx11-slikenet-rmlui.1202730/
+            - time [ref=e72]: Jan 7, 2022
+    - generic [ref=e76]:
+      - generic [ref=e77]:
+        - navigation [ref=e79]:
+          - generic [ref=e80]:
+            - list [ref=e81]:
+              - listitem [ref=e82] [cursor=pointer]:
+                - link "1" [ref=e83]:
+                  - /url: /threads/pt-source-x64-dx11-slikenet-rmlui.1202730/
+              - listitem [ref=e84]:
+                - link "2" [ref=e85] [cursor=pointer]:
+                  - /url: /threads/pt-source-x64-dx11-slikenet-rmlui.1202730/page-2
+              - listitem [ref=e86]:
+                - link "3" [ref=e87] [cursor=pointer]:
+                  - /url: /threads/pt-source-x64-dx11-slikenet-rmlui.1202730/page-3
+            - link "Next" [ref=e88] [cursor=pointer]:
+              - /url: /threads/pt-source-x64-dx11-slikenet-rmlui.1202730/page-2
+        - link "Highlights Only" [ref=e91] [cursor=pointer]:
+          - /url: /threads/pt-source-x64-dx11-slikenet-rmlui.1202730/?highlights=1
+          - generic [ref=e92]: Highlights Only
+      - generic [ref=e94]:
+        - article [ref=e95]:
+          - generic [ref=e96]:
+            - list [ref=e97]:
+              - listitem [ref=e98]:
+                - link "Jan 7, 2022" [ref=e99] [cursor=pointer]:
+                  - /url: /threads/pt-source-x64-dx11-slikenet-rmlui.1202730/post-9109678
+                  - time [ref=e100]: Jan 7, 2022
+            - list [ref=e101]:
+              - listitem [ref=e102]:
+                - link "Share" [ref=e103] [cursor=pointer]:
+                  - /url: /threads/pt-source-x64-dx11-slikenet-rmlui.1202730/post-9109678
+                  - img [ref=e105]
+              - listitem [ref=e107]:
+                - link "#1" [ref=e108] [cursor=pointer]:
+                  - /url: /threads/pt-source-x64-dx11-slikenet-rmlui.1202730/post-9109678
+          - generic [ref=e109]:
+            - generic [ref=e111]:
+              - link "bocadecao" [ref=e114] [cursor=pointer]:
+                - /url: /members/bocadecao.704648/
+                - img "bocadecao" [ref=e115]: B
+              - generic [ref=e116]:
+                - heading "bocadecao" [level=4] [ref=e118]:
+                  - link "bocadecao" [ref=e119] [cursor=pointer]:
+                    - /url: /members/bocadecao.704648/
+                - heading "Socius Decennalis" [level=5] [ref=e120]
+                - strong [ref=e122]: Decennium
+                - generic [ref=e123]:
+                  - link [ref=e124] [cursor=pointer]:
+                    - /url: /members/bocadecao.704648/#badges
+                    - img [ref=e126]
+                  - link [ref=e128] [cursor=pointer]:
+                    - /url: /members/bocadecao.704648/#badges
+                    - img [ref=e130]
+              - generic [ref=e133]:
+                - generic [ref=e134]:
+                  - term [ref=e135]: "Joined:"
+                  - definition [ref=e136]: May 30, 2009
+                - generic [ref=e137]:
+                  - term [ref=e138]: "Messages:"
+                  - definition [ref=e139]: "190"
+                - generic [ref=e140]:
+                  - term [ref=e141]: "Reaction score:"
+                  - definition [ref=e142]: "64"
+            - generic [ref=e145]:
+              - generic [ref=e146]:
+                - article [ref=e148]:
+                  - generic [ref=e150]:
+                    - text: "Hello friends, enjoy it. :8:"
+                    - list [ref=e151]:
+                      - listitem [ref=e152]: Removed all korean comments
+                      - listitem [ref=e153]: Common bugs fixed
+                      - listitem [ref=e154]: Source migrated to use x64 instead of x86
+                      - listitem [ref=e155]: All warnings solved (source using /w3)
+                      - listitem [ref=e156]: Using safer functions for memory operations
+                      - listitem [ref=e157]: Using Precompiled Header
+                      - listitem [ref=e158]: Game and Server in different source files (same project)
+                      - listitem [ref=e159]: Removed unused code and files
+                      - listitem [ref=e160]: Source files organized in folders
+                      - listitem [ref=e161]: Graphics Rendering rewrote and refactored to use Directx 11
+                      - listitem [ref=e162]: Network rewrote to use SLikeNet library (UDP + Messages Stream etc)
+                      - listitem [ref=e163]: Removed transformed vertices from rendering
+                      - listitem [ref=e164]: Some rendering stuffs using DirectxTK (fonts etc)
+                      - listitem [ref=e165]: All textures converted to DDS
+                      - listitem [ref=e166]: Source using vcpkg to manage dependencies (lua, slikenet, rmlui, dxtk)
+                      - listitem [ref=e167]: Source integrated with RmlUI (html rendering library)
+                      - listitem [ref=e168]: Source integrated with Github actions to validate commits automatically
+                      - listitem [ref=e169]: Input subsytem using DXTK
+                      - listitem [ref=e170]: Network messages handler (handle and process your network messages dynamically)
+                      - listitem [ref=e171]: Cursor rendering using Windows API
+                      - listitem [ref=e172]: Network remote procedure call system (call a function with custom arguments over network)
+                      - listitem [ref=e173]: "Network properties replication draft (you can check it in `feature/property-replication` branch)"
+                    - generic "bocadecao - PT Source x64 + DX11 + SLikeNet + RmlUI - RaGEZONE Forums" [ref=e174]:
+                      - img "bocadecao - PT Source x64 + DX11 + SLikeNet + RmlUI - RaGEZONE Forums" [ref=e175]
+                    - generic "bocadecao - PT Source x64 + DX11 + SLikeNet + RmlUI - RaGEZONE Forums" [ref=e176]:
+                      - img "bocadecao - PT Source x64 + DX11 + SLikeNet + RmlUI - RaGEZONE Forums" [ref=e177]
+                    - generic "bocadecao - PT Source x64 + DX11 + SLikeNet + RmlUI - RaGEZONE Forums" [ref=e178]:
+                      - img "bocadecao - PT Source x64 + DX11 + SLikeNet + RmlUI - RaGEZONE Forums" [ref=e179]
+                    - generic "bocadecao - PT Source x64 + DX11 + SLikeNet + RmlUI - RaGEZONE Forums" [ref=e180]:
+                      - img "bocadecao - PT Source x64 + DX11 + SLikeNet + RmlUI - RaGEZONE Forums" [ref=e181]
+                    - generic "bocadecao - PT Source x64 + DX11 + SLikeNet + RmlUI - RaGEZONE Forums" [ref=e182]:
+                      - img "bocadecao - PT Source x64 + DX11 + SLikeNet + RmlUI - RaGEZONE Forums" [ref=e183]
+                    - text: If you really want to use it, you must have a good knowledge on PT, programming and a knowledge on graphics.
+                    - text: Even though I believe that almost no one can use it, I hope you can use it for study and take some knowledge.
+                    - text: If you really want to understand how everything was made, you can check the commits from code, since I am sharing the source with the git files included.
+                    - text: "Thanks for #Cainankenji and #slave (me) for this source."
+                    - text: Also you can thank me reading my last posts and giving a reaction on it.
+                    - generic [ref=e184]: To view the content, you need to sign in or register
+                    - generic [ref=e185]: To view the content, you need to sign in or register
+                    - generic [ref=e186]: To view the content, you need to sign in or register
+                    - generic [ref=e187]: To view the content, you need to sign in or register
+                    - generic [ref=e188]: To view the content, you need to sign in or register
+                    - generic [ref=e189]: Handle a Network Message
+                    - text: The first thing you need to do to handle a Network Message, it is define an unique OpCode as identifier for this Network Message. This OpCode will be used to identify the Network Message through Network Socket and know which data struct should be used, which functions will handle it etc.
+                    - text: You must define your OpCode in the NetworkDef.h file, inside of enum class OpCode.
+                    - generic [ref=e190]:
+                      - generic [ref=e191]: "Code:"
+                      - code [ref=e194]: "enum class OpCode { MyCustomNetworkMessage };"
+                    - generic [ref=e195]: Network Message Data
+                    - text: To define a Network Message Data, you must create a file hpp inside the directory shared/Network/Messages specific for that Message.
+                    - generic [ref=e196]:
+                      - generic [ref=e197]: "Code:"
+                      - code [ref=e200]: "#pragma once #include \"Network/NetworkDef.h\" #include \"Network/NetworkMessage.h\" namespace Network { class MyData : public Message { public: bool Loaded = false; int Other = 0; void Serialize(MessageStream& Message) override { Message.Write(Loaded); Message.Write(Other); } void Deserialize(MessageStream& Message) override { Message.Read(Loaded); Message.Read(Other); } bool Validate() override { // Ensure message can be handled. If this function wasn't implemented, the network message will always be handled if (Loaded) return true; return false; } }; DECLARE_NETWORK_MESSAGE(MyData, OpCode::MyCustomNetworkMessage)"
+                    - generic [ref=e201]: Handle Network Message
+                    - generic [ref=e202]:
+                      - generic [ref=e203]: "Code:"
+                      - code [ref=e206]: "namespace Network { class Foo { public: void Handle(Connection* Connection, MyData& Data) { } void HandleWithoutData(Connection* Connection) { // Since we don't have a Message Data for that OpCode, we just need the Connection pointer to Handle it } }; ServerMessagesHandler::ServerMessagesHandler() { Foo foo; HANDLE_NETWORK_MESSAGE(OpCode::MyCustomNetworkMessage, ValidationType::Authed, ProcessingType::InPlace, &Foo::Handle, foo); HANDLE_NETWORK_MESSAGE(OpCode::MyCustomNetworkMessageWithoutData, ValidationType::Authed, ProcessingType::InPlace, &Foo::HandleWithoutData, foo); } }"
+                    - generic [ref=e207]: Remote Procedure Call
+                    - generic [ref=e208]:
+                      - generic [ref=e209]: "Code:"
+                      - code [ref=e212]: "namespace Network { class NetworkContext; enum class RemoteProcedureCallType : char { Request, Response }; DECLARE_NETWORK_RPC(TestRPC1, int, char, std::string) DECLARE_NETWORK_RPC(TestRPC2) }"
+                    - generic [ref=e213]: Handle a Remote Procedure Call
+                    - generic [ref=e214]:
+                      - generic [ref=e215]: "Code:"
+                      - code [ref=e218]: "class AnyClass { public: HANDLE_NETWORK_RPC(TestRPC1, AnyClass::Test) int Test(int a, char b, std::string c) { return 30; } HANDLE_NETWORK_RPC(TestRPC2, AnyClass::Test2) void Test2() { } };"
+                    - generic [ref=e219]: Calling a Remote Procedure Call
+                    - generic [ref=e220]:
+                      - generic [ref=e221]: "Code:"
+                      - code [ref=e224]: "std::function Response = [](int Value) { LOG(\"Testing return data {0}\", Value); }; Connection->CallWithResponse<Network::TestRPC1>(Response, 30, 'a', std::string(\"Str\"));"
+                    - generic [ref=e225]:
+                      - generic [ref=e226]: "Code:"
+                      - code [ref=e229]: Connection->Call<Network::TestRPC2>();
+                    - generic [ref=e230]: Vcpkg
+                    - generic [ref=e231]:
+                      - generic [ref=e232]: "Code:"
+                      - code [ref=e235]: vcpkg install slikenet:x64-windows-static directxtk:x64-windows-static lua:x64-windows-static rmlui:x64-windows-static
+                    - generic [ref=e236]:
+                      - generic [ref=e237]: "Code:"
+                      - code [ref=e240]: vcpkg integrate install
+                - generic [ref=e241]:
+                  - text: "Last edited by a moderator:"
+                  - time [ref=e242]: Sep 30, 2024
+              - generic [ref=e244]:
+                - list [ref=e245]:
+                  - listitem [ref=e246]:
+                    - img "Like" [ref=e248]
+                - generic [ref=e249]: "Reactions:"
+                - link "swedka, liping0314, Deleted member 2000009608 and 4 others" [ref=e250] [cursor=pointer]:
+                  - /url: /posts/9109678/reactions
+        - link "The Best DDoS Protected Servers" [ref=e253] [cursor=pointer]:
+          - /url: https://bit.ly/3ztZXnj
+          - img "The Best DDoS Protected Servers" [ref=e254]
+        - article [ref=e255]:
+          - generic [ref=e256]:
+            - list [ref=e257]:
+              - listitem [ref=e258]:
+                - link "Jan 7, 2022" [ref=e259] [cursor=pointer]:
+                  - /url: /threads/pt-source-x64-dx11-slikenet-rmlui.1202730/post-9109707
+                  - time [ref=e260]: Jan 7, 2022
+            - list [ref=e261]:
+              - listitem [ref=e262]:
+                - link "Share" [ref=e263] [cursor=pointer]:
+                  - /url: /threads/pt-source-x64-dx11-slikenet-rmlui.1202730/post-9109707
+                  - img [ref=e265]
+              - listitem [ref=e267]:
+                - link "#2" [ref=e268] [cursor=pointer]:
+                  - /url: /threads/pt-source-x64-dx11-slikenet-rmlui.1202730/post-9109707
+          - generic [ref=e269]:
+            - generic [ref=e271]:
+              - link "bocadecao" [ref=e274] [cursor=pointer]:
+                - /url: /members/bocadecao.704648/
+                - img "bocadecao" [ref=e275]: B
+              - generic [ref=e276]:
+                - heading "bocadecao" [level=4] [ref=e278]:
+                  - link "bocadecao" [ref=e279] [cursor=pointer]:
+                    - /url: /members/bocadecao.704648/
+                - heading "Socius Decennalis" [level=5] [ref=e280]
+                - strong [ref=e282]: Decennium
+                - generic [ref=e283]:
+                  - link [ref=e284] [cursor=pointer]:
+                    - /url: /members/bocadecao.704648/#badges
+                    - img [ref=e286]
+                  - link [ref=e288] [cursor=pointer]:
+                    - /url: /members/bocadecao.704648/#badges
+                    - img [ref=e290]
+              - generic [ref=e293]:
+                - generic [ref=e294]:
+                  - term [ref=e295]: "Joined:"
+                  - definition [ref=e296]: May 30, 2009
+                - generic [ref=e297]:
+                  - term [ref=e298]: "Messages:"
+                  - definition [ref=e299]: "190"
+                - generic [ref=e300]:
+                  - term [ref=e301]: "Reaction score:"
+                  - definition [ref=e302]: "64"
+            - generic [ref=e305]:
+              - article [ref=e308]:
+                - generic [ref=e310]:
+                  - generic [ref=e311]: Default.hlsl
+                  - generic [ref=e312]:
+                    - generic [ref=e313]: "Code:"
+                    - code [ref=e316]: "Texture2D DiffuseTexture : register(t0); SamplerState DiffuseSampler : register(s0); cbuffer CameraParameters : register(b0) { float4x4 World; float4x4 ViewProjection; } cbuffer TextureBlendingParameters : register(b1) { int Tex1ColorBlendOp; int Tex2ColorBlendOp; int Tex1AlphaBlendOp; int Tex2AlphaBlendOp; } struct VS_INPUT { float4 Position : POSITION; float4 Color : COLOR; float2 TexCoord : TEXCOORD; }; struct PS_INPUT { float4 Position : SV_POSITION; float4 Color : COLOR; float2 TexCoord : TEXCOORD; }; PS_INPUT VS(VS_INPUT Input) { PS_INPUT Output = (PS_INPUT)0; // Fix for proper matrix calculations. Input.Position.w = 1.0f; Output.Position = mul(Input.Position, ViewProjection); Output.Color = Input.Color; Output.TexCoord = Input.TexCoord; return Output; } float4 PS(PS_INPUT Input) : SV_TARGET { float4 TextureColor = DiffuseTexture.Sample(DiffuseSampler, Input.TexCoord); // Alpha Mask clip(TextureColor.a <= 0.5f ? -1 : 1); float4 FinalColor = TextureColor * Input.Color; return FinalColor; }"
+                  - generic [ref=e317]: UI.hlsl
+                  - generic [ref=e318]:
+                    - generic [ref=e319]: "Code:"
+                    - code [ref=e322]: "Texture2D DiffuseTexture : register(t0); SamplerState DiffuseSampler : register(s0); cbuffer TextureParameters : register(b0) { float4x4 Transform; float2 Translation; float2 ScreenSize; } struct VS_INPUT { float4 Position : POSITION; float4 Color : COLOR; float2 TexCoord : TEXCOORD; }; struct PS_INPUT { float4 Position : SV_POSITION; float4 Color : COLOR; float2 TexCoord : TEXCOORD; }; PS_INPUT VS(VS_INPUT Input) { PS_INPUT Output = (PS_INPUT)0; Output.Position = mul(Input.Position, Transform); Output.Position.xy = (Output.Position.xy + Translation) * ScreenSize * 2; // from pixel to [0..2] Output.Position.xy -= 1; // to [-1..1] Output.Position.y *= -1; // because top left in texture space is bottom left in projective space Output.Position.zw = float2(0,1); Output.Color = Input.Color; Output.TexCoord = Input.TexCoord; return Output; } float4 PS(PS_INPUT Input) : SV_TARGET { return DiffuseTexture.Sample(DiffuseSampler, Input.TexCoord) * Input.Color; }"
+              - generic [ref=e324]:
+                - list [ref=e325]:
+                  - listitem [ref=e326]:
+                    - img "Like" [ref=e328]
+                - generic [ref=e329]: "Reactions:"
+                - link "SheenBR and SunnyZ" [ref=e330] [cursor=pointer]:
+                  - /url: /posts/9109707/reactions
+        - article [ref=e331]:
+          - generic [ref=e332]:
+            - list [ref=e333]:
+              - listitem [ref=e334]:
+                - link "Jan 7, 2022" [ref=e335] [cursor=pointer]:
+                  - /url: /threads/pt-source-x64-dx11-slikenet-rmlui.1202730/post-9109711
+                  - time [ref=e336]: Jan 7, 2022
+            - list [ref=e337]:
+              - listitem [ref=e338]:
+                - link "Share" [ref=e339] [cursor=pointer]:
+                  - /url: /threads/pt-source-x64-dx11-slikenet-rmlui.1202730/post-9109711
+                  - img [ref=e341]
+              - listitem [ref=e343]:
+                - link "#3" [ref=e344] [cursor=pointer]:
+                  - /url: /threads/pt-source-x64-dx11-slikenet-rmlui.1202730/post-9109711
+          - generic [ref=e345]:
+            - generic [ref=e347]:
+              - link "loveme006" [ref=e350] [cursor=pointer]:
+                - /url: /members/loveme006.2000041642/
+                - img "loveme006" [ref=e351]: L
+              - generic [ref=e352]:
+                - heading "loveme006" [level=4] [ref=e354]:
+                  - link "loveme006" [ref=e355] [cursor=pointer]:
+                    - /url: /members/loveme006.2000041642/
+                - heading "Newbie Spellweaver" [level=5] [ref=e356]
+              - generic [ref=e357]:
+                - generic [ref=e358]:
+                  - term [ref=e359]: "Joined:"
+                  - definition [ref=e360]: Dec 23, 2013
+                - generic [ref=e361]:
+                  - term [ref=e362]: "Messages:"
+                  - definition [ref=e363]: "54"
+                - generic [ref=e364]:
+                  - term [ref=e365]: "Reaction score:"
+                  - definition [ref=e366]: "3"
+            - article [ref=e372]:
+              - generic [ref=e374]: this is cool Is it possible to make the graphics even more beautiful?
+        - article [ref=e375]:
+          - generic [ref=e376]:
+            - list [ref=e377]:
+              - listitem [ref=e378]:
+                - link "Jan 8, 2022" [ref=e379] [cursor=pointer]:
+                  - /url: /threads/pt-source-x64-dx11-slikenet-rmlui.1202730/post-9109769
+                  - time [ref=e380]: Jan 8, 2022
+            - list [ref=e381]:
+              - listitem [ref=e382]:
+                - link "Share" [ref=e383] [cursor=pointer]:
+                  - /url: /threads/pt-source-x64-dx11-slikenet-rmlui.1202730/post-9109769
+                  - img [ref=e385]
+              - listitem [ref=e387]:
+                - link "#4" [ref=e388] [cursor=pointer]:
+                  - /url: /threads/pt-source-x64-dx11-slikenet-rmlui.1202730/post-9109769
+          - generic [ref=e389]:
+            - generic [ref=e391]:
+              - link "SunnyZ" [ref=e394] [cursor=pointer]:
+                - /url: /members/sunnyz.698017/
+                - img "SunnyZ" [ref=e395]
+              - generic [ref=e396]:
+                - heading "SunnyZ" [level=4] [ref=e398]:
+                  - link "SunnyZ" [ref=e399] [cursor=pointer]:
+                    - /url: /members/sunnyz.698017/
+                - heading "Professional Aussie" [level=5] [ref=e400]
+                - strong [ref=e402]: Decennium
+                - link [ref=e404] [cursor=pointer]:
+                  - /url: /members/sunnyz.698017/#badges
+                  - img [ref=e406]
+              - generic [ref=e408]:
+                - generic [ref=e409]:
+                  - term [ref=e410]: "Joined:"
+                  - definition [ref=e411]: Jul 24, 2006
+                - generic [ref=e412]:
+                  - term [ref=e413]: "Messages:"
+                  - definition [ref=e414]: "902"
+                - generic [ref=e415]:
+                  - term [ref=e416]: "Reaction score:"
+                  - definition [ref=e417]: "627"
+            - article [ref=e423]:
+              - generic [ref=e425]:
+                - blockquote [ref=e426]:
+                  - generic [ref=e428]: All textures converted to DDS
+                - text: Very nice! Was working on this myself to save a few GB from the client size.
+                - text: Will definitely have a play with this, thank you!
+        - article [ref=e429]:
+          - generic [ref=e430]:
+            - list [ref=e431]:
+              - listitem [ref=e432]:
+                - link "Jan 9, 2022" [ref=e433] [cursor=pointer]:
+                  - /url: /threads/pt-source-x64-dx11-slikenet-rmlui.1202730/post-9109889
+                  - time [ref=e434]: Jan 9, 2022
+            - list [ref=e435]:
+              - listitem [ref=e436]:
+                - link "Share" [ref=e437] [cursor=pointer]:
+                  - /url: /threads/pt-source-x64-dx11-slikenet-rmlui.1202730/post-9109889
+                  - img [ref=e439]
+              - listitem [ref=e441]:
+                - link "#5" [ref=e442] [cursor=pointer]:
+                  - /url: /threads/pt-source-x64-dx11-slikenet-rmlui.1202730/post-9109889
+          - generic [ref=e443]:
+            - generic [ref=e445]:
+              - link "bocadecao" [ref=e448] [cursor=pointer]:
+                - /url: /members/bocadecao.704648/
+                - img "bocadecao" [ref=e449]: B
+              - generic [ref=e450]:
+                - heading "bocadecao" [level=4] [ref=e452]:
+                  - link "bocadecao" [ref=e453] [cursor=pointer]:
+                    - /url: /members/bocadecao.704648/
+                - heading "Socius Decennalis" [level=5] [ref=e454]
+                - strong [ref=e456]: Decennium
+                - generic [ref=e457]:
+                  - link [ref=e458] [cursor=pointer]:
+                    - /url: /members/bocadecao.704648/#badges
+                    - img [ref=e460]
+                  - link [ref=e462] [cursor=pointer]:
+                    - /url: /members/bocadecao.704648/#badges
+                    - img [ref=e464]
+              - generic [ref=e467]:
+                - generic [ref=e468]:
+                  - term [ref=e469]: "Joined:"
+                  - definition [ref=e470]: May 30, 2009
+                - generic [ref=e471]:
+                  - term [ref=e472]: "Messages:"
+                  - definition [ref=e473]: "190"
+                - generic [ref=e474]:
+                  - term [ref=e475]: "Reaction score:"
+                  - definition [ref=e476]: "64"
+            - generic [ref=e479]:
+              - article [ref=e482]:
+                - generic [ref=e484]:
+                  - text: Sure you can, but u will need a good knowledge on graphics rendering.
+                  - text: Ye, when I converted it didnt save many size, maybe u can compress textures even more..
+                  - text: Btw I've edited the original post including the download for client and server files.
+                  - img ":)" [ref=e485]
+                  - text: ":"
+              - generic [ref=e487]:
+                - list [ref=e488]:
+                  - listitem [ref=e489]:
+                    - img "Like" [ref=e491]
+                - generic [ref=e492]: "Reactions:"
+                - link "SunnyZ" [ref=e493] [cursor=pointer]:
+                  - /url: /posts/9109889/reactions
+        - article [ref=e494]:
+          - generic [ref=e495]:
+            - list [ref=e496]:
+              - listitem [ref=e497]:
+                - link "Jan 9, 2022" [ref=e498] [cursor=pointer]:
+                  - /url: /threads/pt-source-x64-dx11-slikenet-rmlui.1202730/post-9109947
+                  - time [ref=e499]: Jan 9, 2022
+            - list [ref=e500]:
+              - listitem [ref=e501]:
+                - link "Share" [ref=e502] [cursor=pointer]:
+                  - /url: /threads/pt-source-x64-dx11-slikenet-rmlui.1202730/post-9109947
+                  - img [ref=e504]
+              - listitem [ref=e506]:
+                - link "#6" [ref=e507] [cursor=pointer]:
+                  - /url: /threads/pt-source-x64-dx11-slikenet-rmlui.1202730/post-9109947
+          - generic [ref=e508]:
+            - generic [ref=e510]:
+              - link "GodfatherBR" [ref=e513] [cursor=pointer]:
+                - /url: /members/godfatherbr.2000296768/
+                - img "GodfatherBR" [ref=e514]: G
+              - generic [ref=e515]:
+                - heading "GodfatherBR" [level=4] [ref=e517]:
+                  - link "GodfatherBR" [ref=e518] [cursor=pointer]:
+                    - /url: /members/godfatherbr.2000296768/
+                - heading "Initiate Mage" [level=5] [ref=e519]
+              - generic [ref=e520]:
+                - generic [ref=e521]:
+                  - term [ref=e522]: "Joined:"
+                  - definition [ref=e523]: Jul 28, 2020
+                - generic [ref=e524]:
+                  - term [ref=e525]: "Messages:"
+                  - definition [ref=e526]: "4"
+                - generic [ref=e527]:
+                  - term [ref=e528]: "Reaction score:"
+                  - definition [ref=e529]: "2"
+            - article [ref=e535]:
+              - generic [ref=e537]:
+                - text: Tankyou Igor.
+                - text: I believe it will be very useful for those who want to study and learn about the content. Could you give me some private lessons on the subject. haha.Very good.
+        - article [ref=e538]:
+          - generic [ref=e539]:
+            - list [ref=e540]:
+              - listitem [ref=e541]:
+                - link "Jan 9, 2022" [ref=e542] [cursor=pointer]:
+                  - /url: /threads/pt-source-x64-dx11-slikenet-rmlui.1202730/post-9109958
+                  - time [ref=e543]: Jan 9, 2022
+            - list [ref=e544]:
+              - listitem [ref=e545]:
+                - link "Share" [ref=e546] [cursor=pointer]:
+                  - /url: /threads/pt-source-x64-dx11-slikenet-rmlui.1202730/post-9109958
+                  - img [ref=e548]
+              - listitem [ref=e550]:
+                - link "#7" [ref=e551] [cursor=pointer]:
+                  - /url: /threads/pt-source-x64-dx11-slikenet-rmlui.1202730/post-9109958
+          - generic [ref=e552]:
+            - generic [ref=e554]:
+              - link "vipe" [ref=e557] [cursor=pointer]:
+                - /url: /members/vipe.453906/
+                - img "vipe" [ref=e558]: V
+              - generic [ref=e559]:
+                - heading "vipe" [level=4] [ref=e561]:
+                  - link "vipe" [ref=e562] [cursor=pointer]:
+                    - /url: /members/vipe.453906/
+                - heading "Newbie Spellweaver" [level=5] [ref=e563]
+                - link [ref=e565] [cursor=pointer]:
+                  - /url: /members/vipe.453906/#badges
+                  - img [ref=e567]
+              - generic [ref=e570]:
+                - generic [ref=e571]:
+                  - term [ref=e572]: "Joined:"
+                  - definition [ref=e573]: Feb 19, 2008
+                - generic [ref=e574]:
+                  - term [ref=e575]: "Messages:"
+                  - definition [ref=e576]: "15"
+                - generic [ref=e577]:
+                  - term [ref=e578]: "Reaction score:"
+                  - definition [ref=e579]: "0"
+            - article [ref=e585]:
+              - generic [ref=e587]: ept source 3155 ?
+        - article [ref=e588]:
+          - generic [ref=e589]:
+            - list [ref=e590]:
+              - listitem [ref=e591]:
+                - link "Jan 9, 2022" [ref=e592] [cursor=pointer]:
+                  - /url: /threads/pt-source-x64-dx11-slikenet-rmlui.1202730/post-9109961
+                  - time [ref=e593]: Jan 9, 2022
+            - list [ref=e594]:
+              - listitem [ref=e595]:
+                - link "Share" [ref=e596] [cursor=pointer]:
+                  - /url: /threads/pt-source-x64-dx11-slikenet-rmlui.1202730/post-9109961
+                  - img [ref=e598]
+              - listitem [ref=e600]:
+                - link "#8" [ref=e601] [cursor=pointer]:
+                  - /url: /threads/pt-source-x64-dx11-slikenet-rmlui.1202730/post-9109961
+          - generic [ref=e602]:
+            - generic [ref=e604]:
+              - link "SheenBR" [ref=e607] [cursor=pointer]:
+                - /url: /members/sheenbr.455125/
+                - img "SheenBR" [ref=e608]
+              - generic [ref=e609]:
+                - heading "SheenBR" [level=4] [ref=e611]:
+                  - link "SheenBR" [ref=e612] [cursor=pointer]:
+                    - /url: /members/sheenbr.455125/
+                - heading "Moderator" [level=5] [ref=e613]
+                - strong [ref=e615]: Staff member
+                - strong [ref=e617]: Moderator
+                - generic [ref=e618]:
+                  - link [ref=e619] [cursor=pointer]:
+                    - /url: /members/sheenbr.455125/#badges
+                    - img [ref=e621]
+                  - link [ref=e623] [cursor=pointer]:
+                    - /url: /members/sheenbr.455125/#badges
+                    - img [ref=e625]
+                  - link [ref=e628] [cursor=pointer]:
+                    - /url: /members/sheenbr.455125/#badges
+                    - img [ref=e630]
+                  - link [ref=e632] [cursor=pointer]:
+                    - /url: /members/sheenbr.455125/#badges
+                    - img [ref=e634]
+                  - link [ref=e637] [cursor=pointer]:
+                    - /url: /members/sheenbr.455125/#badges
+                    - img [ref=e639]
+              - generic [ref=e641]:
+                - generic [ref=e642]:
+                  - term [ref=e643]: "Joined:"
+                  - definition [ref=e644]: Feb 22, 2008
+                - generic [ref=e645]:
+                  - term [ref=e646]: "Messages:"
+                  - definition [ref=e647]: 2,427
+                - generic [ref=e648]:
+                  - term [ref=e649]: "Reaction score:"
+                  - definition [ref=e650]: "755"
+            - generic [ref=e654]:
+              - article [ref=e656]:
+                - generic [ref=e658]:
+                  - text: Very nice release man! I pinned the thread.
+                  - text: Is it ready to go online or do we need to fix anything?
+              - generic [ref=e659]:
+                - text: "Last edited:"
+                - time [ref=e660]: Jan 9, 2022
+        - article [ref=e661]:
+          - generic [ref=e662]:
+            - list [ref=e663]:
+              - listitem [ref=e664]:
+                - link "Jan 10, 2022" [ref=e665] [cursor=pointer]:
+                  - /url: /threads/pt-source-x64-dx11-slikenet-rmlui.1202730/post-9109970
+                  - time [ref=e666]: Jan 10, 2022
+            - list [ref=e667]:
+              - listitem [ref=e668]:
+                - link "Share" [ref=e669] [cursor=pointer]:
+                  - /url: /threads/pt-source-x64-dx11-slikenet-rmlui.1202730/post-9109970
+                  - img [ref=e671]
+              - listitem [ref=e673]:
+                - link "#9" [ref=e674] [cursor=pointer]:
+                  - /url: /threads/pt-source-x64-dx11-slikenet-rmlui.1202730/post-9109970
+          - generic [ref=e675]:
+            - generic [ref=e677]:
+              - link "bocadecao" [ref=e680] [cursor=pointer]:
+                - /url: /members/bocadecao.704648/
+                - img "bocadecao" [ref=e681]: B
+              - generic [ref=e682]:
+                - heading "bocadecao" [level=4] [ref=e684]:
+                  - link "bocadecao" [ref=e685] [cursor=pointer]:
+                    - /url: /members/bocadecao.704648/
+                - heading "Socius Decennalis" [level=5] [ref=e686]
+                - strong [ref=e688]: Decennium
+                - generic [ref=e689]:
+                  - link [ref=e690] [cursor=pointer]:
+                    - /url: /members/bocadecao.704648/#badges
+                    - img [ref=e692]
+                  - link [ref=e694] [cursor=pointer]:
+                    - /url: /members/bocadecao.704648/#badges
+                    - img [ref=e696]
+              - generic [ref=e699]:
+                - generic [ref=e700]:
+                  - term [ref=e701]: "Joined:"
+                  - definition [ref=e702]: May 30, 2009
+                - generic [ref=e703]:
+                  - term [ref=e704]: "Messages:"
+                  - definition [ref=e705]: "190"
+                - generic [ref=e706]:
+                  - term [ref=e707]: "Reaction score:"
+                  - definition [ref=e708]: "64"
+            - generic [ref=e711]:
+              - article [ref=e714]:
+                - generic [ref=e716]:
+                  - blockquote [ref=e717]:
+                    - link "SheenBR said:" [ref=e719] [cursor=pointer]:
+                      - /url: /goto/post?id=9109961
+                    - generic [ref=e721]:
+                      - text: Very nice release man! I pinned the thread.
+                      - text: Is it ready to go online or do we need to fix anything?
+                  - text: Not really, many things was removed from source bcoz we would rewrite in the future. It is a source that u surely can use it, but u would need to continue the work that we stopped. For this reason I mentioned you can use it for study and maybe implement what u want in a different source (you guys can check all source history using the git files, so many things u can study from a specific commit or branch).
+              - generic [ref=e723]:
+                - list [ref=e724]:
+                  - listitem [ref=e725]:
+                    - img "Like" [ref=e727]
+                - generic [ref=e728]: "Reactions:"
+                - link "SheenBR" [ref=e729] [cursor=pointer]:
+                  - /url: /posts/9109970/reactions
+        - article [ref=e730]:
+          - generic [ref=e731]:
+            - list [ref=e732]:
+              - listitem [ref=e733]:
+                - link "Jan 10, 2022" [ref=e734] [cursor=pointer]:
+                  - /url: /threads/pt-source-x64-dx11-slikenet-rmlui.1202730/post-9109979
+                  - time [ref=e735]: Jan 10, 2022
+            - list [ref=e736]:
+              - listitem [ref=e737]:
+                - link "Share" [ref=e738] [cursor=pointer]:
+                  - /url: /threads/pt-source-x64-dx11-slikenet-rmlui.1202730/post-9109979
+                  - img [ref=e740]
+              - listitem [ref=e742]:
+                - link "#10" [ref=e743] [cursor=pointer]:
+                  - /url: /threads/pt-source-x64-dx11-slikenet-rmlui.1202730/post-9109979
+          - generic [ref=e744]:
+            - generic [ref=e746]:
+              - link "SheenBR" [ref=e749] [cursor=pointer]:
+                - /url: /members/sheenbr.455125/
+                - img "SheenBR" [ref=e750]
+              - generic [ref=e751]:
+                - heading "SheenBR" [level=4] [ref=e753]:
+                  - link "SheenBR" [ref=e754] [cursor=pointer]:
+                    - /url: /members/sheenbr.455125/
+                - heading "Moderator" [level=5] [ref=e755]
+                - strong [ref=e757]: Staff member
+                - strong [ref=e759]: Moderator
+                - generic [ref=e760]:
+                  - link [ref=e761] [cursor=pointer]:
+                    - /url: /members/sheenbr.455125/#badges
+                    - img [ref=e763]
+                  - link [ref=e765] [cursor=pointer]:
+                    - /url: /members/sheenbr.455125/#badges
+                    - img [ref=e767]
+                  - link [ref=e770] [cursor=pointer]:
+                    - /url: /members/sheenbr.455125/#badges
+                    - img [ref=e772]
+                  - link [ref=e774] [cursor=pointer]:
+                    - /url: /members/sheenbr.455125/#badges
+                    - img [ref=e776]
+                  - link [ref=e779] [cursor=pointer]:
+                    - /url: /members/sheenbr.455125/#badges
+                    - img [ref=e781]
+              - generic [ref=e783]:
+                - generic [ref=e784]:
+                  - term [ref=e785]: "Joined:"
+                  - definition [ref=e786]: Feb 22, 2008
+                - generic [ref=e787]:
+                  - term [ref=e788]: "Messages:"
+                  - definition [ref=e789]: 2,427
+                - generic [ref=e790]:
+                  - term [ref=e791]: "Reaction score:"
+                  - definition [ref=e792]: "755"
+            - generic [ref=e796]:
+              - article [ref=e798]:
+                - generic [ref=e800]:
+                  - text: Can you tell us what was removed?
+                  - text: "--- Edit"
+                  - text: So, from what I can see, party system was removed. Maybe it has more stuff removed.
+                  - text: "I was able to compile and will provide aditional info:"
+                  - generic [ref=e801]: To view the content, you need to sign in or register
+                  - text: "- Follow the steps and install vcpkg"
+                  - text: In project configuration inside visual studio, change the installed directory according to where you installed vcpkg
+                  - generic "bocadecao - PT Source x64 + DX11 + SLikeNet + RmlUI - RaGEZONE Forums" [ref=e802]:
+                    - img "bocadecao - PT Source x64 + DX11 + SLikeNet + RmlUI - RaGEZONE Forums" [ref=e803]
+                  - text: I did only for Shared project and it worked for the others. I also had to manually change game and gameserver.vcxproj because of some hardcoded paths to bocadecao's computer, so I changed those aswell.
+                  - text: Use the command to install the dependencies and compile it.
+                  - generic "bocadecao - PT Source x64 + DX11 + SLikeNet + RmlUI - RaGEZONE Forums" [ref=e804]:
+                    - img "bocadecao - PT Source x64 + DX11 + SLikeNet + RmlUI - RaGEZONE Forums" [ref=e805]
+                  - text: When I have more time I will try to login.
+              - generic [ref=e806]:
+                - text: "Last edited:"
+                - time [ref=e807]: Jan 10, 2022
+        - article [ref=e808]:
+          - generic [ref=e809]:
+            - list [ref=e810]:
+              - listitem [ref=e811]:
+                - link "Jan 10, 2022" [ref=e812] [cursor=pointer]:
+                  - /url: /threads/pt-source-x64-dx11-slikenet-rmlui.1202730/post-9110039
+                  - time [ref=e813]: Jan 10, 2022
+            - list [ref=e814]:
+              - listitem [ref=e815]:
+                - link "Share" [ref=e816] [cursor=pointer]:
+                  - /url: /threads/pt-source-x64-dx11-slikenet-rmlui.1202730/post-9110039
+                  - img [ref=e818]
+              - listitem [ref=e820]:
+                - link "#11" [ref=e821] [cursor=pointer]:
+                  - /url: /threads/pt-source-x64-dx11-slikenet-rmlui.1202730/post-9110039
+          - generic [ref=e822]:
+            - generic [ref=e824]:
+              - link "bocadecao" [ref=e827] [cursor=pointer]:
+                - /url: /members/bocadecao.704648/
+                - img "bocadecao" [ref=e828]: B
+              - generic [ref=e829]:
+                - heading "bocadecao" [level=4] [ref=e831]:
+                  - link "bocadecao" [ref=e832] [cursor=pointer]:
+                    - /url: /members/bocadecao.704648/
+                - heading "Socius Decennalis" [level=5] [ref=e833]
+                - strong [ref=e835]: Decennium
+                - generic [ref=e836]:
+                  - link [ref=e837] [cursor=pointer]:
+                    - /url: /members/bocadecao.704648/#badges
+                    - img [ref=e839]
+                  - link [ref=e841] [cursor=pointer]:
+                    - /url: /members/bocadecao.704648/#badges
+                    - img [ref=e843]
+              - generic [ref=e846]:
+                - generic [ref=e847]:
+                  - term [ref=e848]: "Joined:"
+                  - definition [ref=e849]: May 30, 2009
+                - generic [ref=e850]:
+                  - term [ref=e851]: "Messages:"
+                  - definition [ref=e852]: "190"
+                - generic [ref=e853]:
+                  - term [ref=e854]: "Reaction score:"
+                  - definition [ref=e855]: "64"
+            - article [ref=e861]:
+              - generic [ref=e863]:
+                - text: I don't remember all systems removed, would be interesting to check commits history.
+                - blockquote [ref=e864]:
+                  - generic [ref=e866]: I did only for Shared project and it worked for the others. I also had to manually change game and gameserver.vcxproj because of some hardcoded paths to bocadecao's computer, so I changed those aswell.
+                - text: Hmm really? Check if you are building the solution for x64 using Release / Debug mode. Should not have any hardcoded path because we use a Github action to build all projects and ensure they are building successfully (you can check the /.github/workflows/msbuild.yml file).
+                - generic "xiD1Ick - PT Source x64 + DX11 + SLikeNet + RmlUI - RaGEZONE Forums" [ref=e867]:
+                  - img "xiD1Ick - PT Source x64 + DX11 + SLikeNet + RmlUI - RaGEZONE Forums" [ref=e868]
+                - text: To login you just need to execute the server and you will be able to connect with any account (any password), since we are not using database so far.
+        - article [ref=e869]:
+          - generic [ref=e870]:
+            - list [ref=e871]:
+              - listitem [ref=e872]:
+                - link "Jan 10, 2022" [ref=e873] [cursor=pointer]:
+                  - /url: /threads/pt-source-x64-dx11-slikenet-rmlui.1202730/post-9110041
+                  - time [ref=e874]: Jan 10, 2022
+            - list [ref=e875]:
+              - listitem [ref=e876]:
+                - link "Share" [ref=e877] [cursor=pointer]:
+                  - /url: /threads/pt-source-x64-dx11-slikenet-rmlui.1202730/post-9110041
+                  - img [ref=e879]
+              - listitem [ref=e881]:
+                - link "#12" [ref=e882] [cursor=pointer]:
+                  - /url: /threads/pt-source-x64-dx11-slikenet-rmlui.1202730/post-9110041
+          - generic [ref=e883]:
+            - generic [ref=e885]:
+              - link "SheenBR" [ref=e888] [cursor=pointer]:
+                - /url: /members/sheenbr.455125/
+                - img "SheenBR" [ref=e889]
+              - generic [ref=e890]:
+                - heading "SheenBR" [level=4] [ref=e892]:
+                  - link "SheenBR" [ref=e893] [cursor=pointer]:
+                    - /url: /members/sheenbr.455125/
+                - heading "Moderator" [level=5] [ref=e894]
+                - strong [ref=e896]: Staff member
+                - strong [ref=e898]: Moderator
+                - generic [ref=e899]:
+                  - link [ref=e900] [cursor=pointer]:
+                    - /url: /members/sheenbr.455125/#badges
+                    - img [ref=e902]
+                  - link [ref=e904] [cursor=pointer]:
+                    - /url: /members/sheenbr.455125/#badges
+                    - img [ref=e906]
+                  - link [ref=e909] [cursor=pointer]:
+                    - /url: /members/sheenbr.455125/#badges
+                    - img [ref=e911]
+                  - link [ref=e913] [cursor=pointer]:
+                    - /url: /members/sheenbr.455125/#badges
+                    - img [ref=e915]
+                  - link [ref=e918] [cursor=pointer]:
+                    - /url: /members/sheenbr.455125/#badges
+                    - img [ref=e920]
+              - generic [ref=e922]:
+                - generic [ref=e923]:
+                  - term [ref=e924]: "Joined:"
+                  - definition [ref=e925]: Feb 22, 2008
+                - generic [ref=e926]:
+                  - term [ref=e927]: "Messages:"
+                  - definition [ref=e928]: 2,427
+                - generic [ref=e929]:
+                  - term [ref=e930]: "Reaction score:"
+                  - definition [ref=e931]: "755"
+            - article [ref=e937]:
+              - generic [ref=e939]:
+                - text: Yea, if you download the zip files you provided and open the vcxproj and search for "igorc" you'll find the hardcoded path that my visual studio was complaining about. =(
+                - text: It is related to resource files of both projects, couldn't edit thhru visual studio options so I just used the good old notepad++ xD
+                - text: Oh also there is no database, another good info.
+                - text: Do you think it's possible to remove the need to create a window for the server? If I remember correctly, the WndProc is used by the socket, to send and receive messages. If the need for a window is gone and we find a way to remove every windows dependent function calls, we might be able to setup a docker environment for this and use cheaper host servers and get rid of annoying windows server. Just an idea. =D IDK if it is possible
+        - article [ref=e940]:
+          - generic [ref=e941]:
+            - list [ref=e942]:
+              - listitem [ref=e943]:
+                - link "Jan 10, 2022" [ref=e944] [cursor=pointer]:
+                  - /url: /threads/pt-source-x64-dx11-slikenet-rmlui.1202730/post-9110052
+                  - time [ref=e945]: Jan 10, 2022
+            - list [ref=e946]:
+              - listitem [ref=e947]:
+                - link "Share" [ref=e948] [cursor=pointer]:
+                  - /url: /threads/pt-source-x64-dx11-slikenet-rmlui.1202730/post-9110052
+                  - img [ref=e950]
+              - listitem [ref=e952]:
+                - link "#13" [ref=e953] [cursor=pointer]:
+                  - /url: /threads/pt-source-x64-dx11-slikenet-rmlui.1202730/post-9110052
+          - generic [ref=e954]:
+            - generic [ref=e956]:
+              - link "bocadecao" [ref=e959] [cursor=pointer]:
+                - /url: /members/bocadecao.704648/
+                - img "bocadecao" [ref=e960]: B
+              - generic [ref=e961]:
+                - heading "bocadecao" [level=4] [ref=e963]:
+                  - link "bocadecao" [ref=e964] [cursor=pointer]:
+                    - /url: /members/bocadecao.704648/
+                - heading "Socius Decennalis" [level=5] [ref=e965]
+                - strong [ref=e967]: Decennium
+                - generic [ref=e968]:
+                  - link [ref=e969] [cursor=pointer]:
+                    - /url: /members/bocadecao.704648/#badges
+                    - img [ref=e971]
+                  - link [ref=e973] [cursor=pointer]:
+                    - /url: /members/bocadecao.704648/#badges
+                    - img [ref=e975]
+              - generic [ref=e978]:
+                - generic [ref=e979]:
+                  - term [ref=e980]: "Joined:"
+                  - definition [ref=e981]: May 30, 2009
+                - generic [ref=e982]:
+                  - term [ref=e983]: "Messages:"
+                  - definition [ref=e984]: "190"
+                - generic [ref=e985]:
+                  - term [ref=e986]: "Reaction score:"
+                  - definition [ref=e987]: "64"
+            - generic [ref=e990]:
+              - article [ref=e993]:
+                - generic [ref=e995]:
+                  - text: Ye, very possible. Our idea it was build server to Linux / Multiplatform (for this reason we are using libraries for networking and many windows functions were replaced to use C++ functions).
+                  - text: Also, the WndProc it is used to server logic loop (WM_UPDATE), but it is simpler to rewrite and refactor (I think FPT and UniquePT source are not using this WM_UPDATE anymore, Im not sure).
+              - generic [ref=e997]:
+                - list [ref=e998]:
+                  - listitem [ref=e999]:
+                    - img "Like" [ref=e1001]
+                - generic [ref=e1002]: "Reactions:"
+                - link "SheenBR" [ref=e1003] [cursor=pointer]:
+                  - /url: /posts/9110052/reactions
+        - article [ref=e1004]:
+          - generic [ref=e1005]:
+            - list [ref=e1006]:
+              - listitem [ref=e1007]:
+                - link "Jan 10, 2022" [ref=e1008] [cursor=pointer]:
+                  - /url: /threads/pt-source-x64-dx11-slikenet-rmlui.1202730/post-9110061
+                  - time [ref=e1009]: Jan 10, 2022
+            - list [ref=e1010]:
+              - listitem [ref=e1011]:
+                - link "Share" [ref=e1012] [cursor=pointer]:
+                  - /url: /threads/pt-source-x64-dx11-slikenet-rmlui.1202730/post-9110061
+                  - img [ref=e1014]
+              - listitem [ref=e1016]:
+                - link "#14" [ref=e1017] [cursor=pointer]:
+                  - /url: /threads/pt-source-x64-dx11-slikenet-rmlui.1202730/post-9110061
+          - generic [ref=e1018]:
+            - generic [ref=e1020]:
+              - link "SheenBR" [ref=e1023] [cursor=pointer]:
+                - /url: /members/sheenbr.455125/
+                - img "SheenBR" [ref=e1024]
+              - generic [ref=e1025]:
+                - heading "SheenBR" [level=4] [ref=e1027]:
+                  - link "SheenBR" [ref=e1028] [cursor=pointer]:
+                    - /url: /members/sheenbr.455125/
+                - heading "Moderator" [level=5] [ref=e1029]
+                - strong [ref=e1031]: Staff member
+                - strong [ref=e1033]: Moderator
+                - generic [ref=e1034]:
+                  - link [ref=e1035] [cursor=pointer]:
+                    - /url: /members/sheenbr.455125/#badges
+                    - img [ref=e1037]
+                  - link [ref=e1039] [cursor=pointer]:
+                    - /url: /members/sheenbr.455125/#badges
+                    - img [ref=e1041]
+                  - link [ref=e1044] [cursor=pointer]:
+                    - /url: /members/sheenbr.455125/#badges
+                    - img [ref=e1046]
+                  - link [ref=e1048] [cursor=pointer]:
+                    - /url: /members/sheenbr.455125/#badges
+                    - img [ref=e1050]
+                  - link [ref=e1053] [cursor=pointer]:
+                    - /url: /members/sheenbr.455125/#badges
+                    - img [ref=e1055]
+              - generic [ref=e1057]:
+                - generic [ref=e1058]:
+                  - term [ref=e1059]: "Joined:"
+                  - definition [ref=e1060]: Feb 22, 2008
+                - generic [ref=e1061]:
+                  - term [ref=e1062]: "Messages:"
+                  - definition [ref=e1063]: 2,427
+                - generic [ref=e1064]:
+                  - term [ref=e1065]: "Reaction score:"
+                  - definition [ref=e1066]: "755"
+            - article [ref=e1072]:
+              - generic [ref=e1074]:
+                - blockquote [ref=e1075]:
+                  - link "bocadecao said:" [ref=e1077] [cursor=pointer]:
+                    - /url: /goto/post?id=9110052
+                  - generic [ref=e1079]:
+                    - text: Ye, very possible. Our idea it was build server to Linux / Multiplatform (for this reason we are using libraries for networking and many windows functions were replaced to use C++ functions).
+                    - text: Also, the WndProc it is used to server logic loop (WM_UPDATE), but it is simpler to rewrite and refactor (I think FPT and UniquePT source are not using this WM_UPDATE anymore, Im not sure).
+                - text: Just for curiosity, how would you go to remove the WM_TIMER from WndProc? I don't develop C++ for years now, I have no clue xD
+                - text: I think you meant WM_TIMER instead of WM_UPDATE?
+                - text: If this was C# I'd be the happiest man in the world
+        - article [ref=e1080]:
+          - generic [ref=e1081]:
+            - list [ref=e1082]:
+              - listitem [ref=e1083]:
+                - link "Jan 10, 2022" [ref=e1084] [cursor=pointer]:
+                  - /url: /threads/pt-source-x64-dx11-slikenet-rmlui.1202730/post-9110063
+                  - time [ref=e1085]: Jan 10, 2022
+            - list [ref=e1086]:
+              - listitem [ref=e1087]:
+                - link "Share" [ref=e1088] [cursor=pointer]:
+                  - /url: /threads/pt-source-x64-dx11-slikenet-rmlui.1202730/post-9110063
+                  - img [ref=e1090]
+              - listitem [ref=e1092]:
+                - link "#15" [ref=e1093] [cursor=pointer]:
+                  - /url: /threads/pt-source-x64-dx11-slikenet-rmlui.1202730/post-9110063
+          - generic [ref=e1094]:
+            - generic [ref=e1096]:
+              - link "bocadecao" [ref=e1099] [cursor=pointer]:
+                - /url: /members/bocadecao.704648/
+                - img "bocadecao" [ref=e1100]: B
+              - generic [ref=e1101]:
+                - heading "bocadecao" [level=4] [ref=e1103]:
+                  - link "bocadecao" [ref=e1104] [cursor=pointer]:
+                    - /url: /members/bocadecao.704648/
+                - heading "Socius Decennalis" [level=5] [ref=e1105]
+                - strong [ref=e1107]: Decennium
+                - generic [ref=e1108]:
+                  - link [ref=e1109] [cursor=pointer]:
+                    - /url: /members/bocadecao.704648/#badges
+                    - img [ref=e1111]
+                  - link [ref=e1113] [cursor=pointer]:
+                    - /url: /members/bocadecao.704648/#badges
+                    - img [ref=e1115]
+              - generic [ref=e1118]:
+                - generic [ref=e1119]:
+                  - term [ref=e1120]: "Joined:"
+                  - definition [ref=e1121]: May 30, 2009
+                - generic [ref=e1122]:
+                  - term [ref=e1123]: "Messages:"
+                  - definition [ref=e1124]: "190"
+                - generic [ref=e1125]:
+                  - term [ref=e1126]: "Reaction score:"
+                  - definition [ref=e1127]: "64"
+            - generic [ref=e1130]:
+              - article [ref=e1133]:
+                - generic [ref=e1135]:
+                  - blockquote [ref=e1136]:
+                    - link "SheenBR said:" [ref=e1138] [cursor=pointer]:
+                      - /url: /goto/post?id=9110061
+                    - generic [ref=e1140]:
+                      - text: Just for curiosity, how would you go to remove the WM_TIMER from WndProc? I don't develop C++ for years now, I have no clue xD
+                      - text: I think you meant WM_TIMER instead of WM_UPDATE?
+                      - text: If this was C# I'd be the happiest man in the world
+                  - text: "Ooh sorry, ye, WM_TIMER. To remove this from WndProc we should implement a timer logic inside of an infinite loop on server side, very similar what happens on game side. Dno how exactly explain that, but you can read more about it here:"
+                  - generic [ref=e1141]: To view the content, you need to sign in or register
+                  - text: C++ with C# features
+                  - img ":huh:"
+              - generic [ref=e1143]:
+                - list [ref=e1144]:
+                  - listitem [ref=e1145]:
+                    - img "Like" [ref=e1147]
+                - generic [ref=e1148]: "Reactions:"
+                - link "SheenBR" [ref=e1149] [cursor=pointer]:
+                  - /url: /posts/9110063/reactions
+        - article [ref=e1150]:
+          - generic [ref=e1151]:
+            - list [ref=e1152]:
+              - listitem [ref=e1153]:
+                - link "Jan 10, 2022" [ref=e1154] [cursor=pointer]:
+                  - /url: /threads/pt-source-x64-dx11-slikenet-rmlui.1202730/post-9110073
+                  - time [ref=e1155]: Jan 10, 2022
+            - list [ref=e1156]:
+              - listitem [ref=e1157]:
+                - link "Share" [ref=e1158] [cursor=pointer]:
+                  - /url: /threads/pt-source-x64-dx11-slikenet-rmlui.1202730/post-9110073
+                  - img [ref=e1160]
+              - listitem [ref=e1162]:
+                - link "#16" [ref=e1163] [cursor=pointer]:
+                  - /url: /threads/pt-source-x64-dx11-slikenet-rmlui.1202730/post-9110073
+          - generic [ref=e1164]:
+            - generic [ref=e1166]:
+              - link "SheenBR" [ref=e1169] [cursor=pointer]:
+                - /url: /members/sheenbr.455125/
+                - img "SheenBR" [ref=e1170]
+              - generic [ref=e1171]:
+                - heading "SheenBR" [level=4] [ref=e1173]:
+                  - link "SheenBR" [ref=e1174] [cursor=pointer]:
+                    - /url: /members/sheenbr.455125/
+                - heading "Moderator" [level=5] [ref=e1175]
+                - strong [ref=e1177]: Staff member
+                - strong [ref=e1179]: Moderator
+                - generic [ref=e1180]:
+                  - link [ref=e1181] [cursor=pointer]:
+                    - /url: /members/sheenbr.455125/#badges
+                    - img [ref=e1183]
+                  - link [ref=e1185] [cursor=pointer]:
+                    - /url: /members/sheenbr.455125/#badges
+                    - img [ref=e1187]
+                  - link [ref=e1190] [cursor=pointer]:
+                    - /url: /members/sheenbr.455125/#badges
+                    - img [ref=e1192]
+                  - link [ref=e1194] [cursor=pointer]:
+                    - /url: /members/sheenbr.455125/#badges
+                    - img [ref=e1196]
+                  - link [ref=e1199] [cursor=pointer]:
+                    - /url: /members/sheenbr.455125/#badges
+                    - img [ref=e1201]
+              - generic [ref=e1203]:
+                - generic [ref=e1204]:
+                  - term [ref=e1205]: "Joined:"
+                  - definition [ref=e1206]: Feb 22, 2008
+                - generic [ref=e1207]:
+                  - term [ref=e1208]: "Messages:"
+                  - definition [ref=e1209]: 2,427
+                - generic [ref=e1210]:
+                  - term [ref=e1211]: "Reaction score:"
+                  - definition [ref=e1212]: "755"
+            - article [ref=e1218]:
+              - generic [ref=e1220]:
+                - text: I work with C# for years now, can't even tell when I started. I'm way more used to C# than C++.. would take some time to get used to C++ xD Not that I can't learn it, but so much has changed in 10 years that I have a lot of things to catch up. =/
+                - text: Anyways, really? Just a simple while(true) would do it? Sleeping for the right ammount of time and all that jazz... Seems pretty much simple. In C# I'd just use a Timer class, set the interval and sign a callback. Maybe need to deal with concurrency (trying to execute the update again while the other didnt finish yet and that stuff..) I dont really know how PT does it.
+                - text: but pretty much all server magic happens in WM_TIMER I suppose. my least favorite packets 48470013 & 48470014 are mostly constructed there xD
+                - text: One thing I can't understand is that crazy looping sleep they do with npc's for example.. you'll find some of them while you go trhu the functions WM_TIMER executes to update the monsters and npcs.
+                - text: "they have a fixed array of lets suppose \"chrAutoPlayer[1000]\" and outside the loop they use a counter: \"srAutoPlayCount++\"."
+                - text: Loop inside that array is only executed when srAutoPlayCount & 0x3F == 0 for example. Wtf is going on here, I don't know xD Math is not my strong subject. I know each call should be at 100ms since the SetTimer function, so I assume every +1 in srAutoPlayCount means 100ms. 0x3F = 63d. So, does it mean that this bitwise if is just a sleep for 63 * 100ms -> 6,3 seconds? Does not make any sense because packet 0x48470014 is sent something like each second, and it does have a similar logic to control the timing.
+                - text: Could you explain that to me, and maybe others taht suck at math? xD
+                - text: Game development is way crazier than the development we do at the fintech I work at lol
+        - article [ref=e1221]:
+          - generic [ref=e1222]:
+            - list [ref=e1223]:
+              - listitem [ref=e1224]:
+                - link "Jan 10, 2022" [ref=e1225] [cursor=pointer]:
+                  - /url: /threads/pt-source-x64-dx11-slikenet-rmlui.1202730/post-9110076
+                  - time [ref=e1226]: Jan 10, 2022
+            - list [ref=e1227]:
+              - listitem [ref=e1228]:
+                - link "Share" [ref=e1229] [cursor=pointer]:
+                  - /url: /threads/pt-source-x64-dx11-slikenet-rmlui.1202730/post-9110076
+                  - img [ref=e1231]
+              - listitem [ref=e1233]:
+                - link "#17" [ref=e1234] [cursor=pointer]:
+                  - /url: /threads/pt-source-x64-dx11-slikenet-rmlui.1202730/post-9110076
+          - generic [ref=e1235]:
+            - generic [ref=e1237]:
+              - link "oarthurdev" [ref=e1240] [cursor=pointer]:
+                - /url: /members/oarthurdev.2000327137/
+                - img "oarthurdev" [ref=e1241]: O
+              - generic [ref=e1242]:
+                - heading "oarthurdev" [level=4] [ref=e1244]:
+                  - link "oarthurdev" [ref=e1245] [cursor=pointer]:
+                    - /url: /members/oarthurdev.2000327137/
+                - heading "Initiate Mage" [level=5] [ref=e1246]
+              - generic [ref=e1247]:
+                - generic [ref=e1248]:
+                  - term [ref=e1249]: "Joined:"
+                  - definition [ref=e1250]: Jan 10, 2022
+                - generic [ref=e1251]:
+                  - term [ref=e1252]: "Messages:"
+                  - definition [ref=e1253]: "2"
+                - generic [ref=e1254]:
+                  - term [ref=e1255]: "Reaction score:"
+                  - definition [ref=e1256]: "0"
+            - article [ref=e1262]:
+              - generic [ref=e1264]:
+                - text: hi @
+                - link "bocadecao" [ref=e1267] [cursor=pointer]:
+                  - /url: https://forum.ragezone.com/members/704648.html
+                - text: ", do you know why this is happening? i dont have any knowledge whit dds files"
+                - img ":(" [ref=e1268]
+                - generic "bocadecao - PT Source x64 + DX11 + SLikeNet + RmlUI - RaGEZONE Forums" [ref=e1269]:
+                  - img "bocadecao - PT Source x64 + DX11 + SLikeNet + RmlUI - RaGEZONE Forums" [ref=e1270]
+                - generic "bocadecao - PT Source x64 + DX11 + SLikeNet + RmlUI - RaGEZONE Forums" [ref=e1271]:
+                  - img "bocadecao - PT Source x64 + DX11 + SLikeNet + RmlUI - RaGEZONE Forums" [ref=e1272]
+        - article [ref=e1273]:
+          - generic [ref=e1274]:
+            - list [ref=e1275]:
+              - listitem [ref=e1276]:
+                - link "Jan 10, 2022" [ref=e1277] [cursor=pointer]:
+                  - /url: /threads/pt-source-x64-dx11-slikenet-rmlui.1202730/post-9110077
+                  - time [ref=e1278]: Jan 10, 2022
+            - list [ref=e1279]:
+              - listitem [ref=e1280]:
+                - link "Share" [ref=e1281] [cursor=pointer]:
+                  - /url: /threads/pt-source-x64-dx11-slikenet-rmlui.1202730/post-9110077
+                  - img [ref=e1283]
+              - listitem [ref=e1285]:
+                - link "#18" [ref=e1286] [cursor=pointer]:
+                  - /url: /threads/pt-source-x64-dx11-slikenet-rmlui.1202730/post-9110077
+          - generic [ref=e1287]:
+            - generic [ref=e1289]:
+              - link "SheenBR" [ref=e1292] [cursor=pointer]:
+                - /url: /members/sheenbr.455125/
+                - img "SheenBR" [ref=e1293]
+              - generic [ref=e1294]:
+                - heading "SheenBR" [level=4] [ref=e1296]:
+                  - link "SheenBR" [ref=e1297] [cursor=pointer]:
+                    - /url: /members/sheenbr.455125/
+                - heading "Moderator" [level=5] [ref=e1298]
+                - strong [ref=e1300]: Staff member
+                - strong [ref=e1302]: Moderator
+                - generic [ref=e1303]:
+                  - link [ref=e1304] [cursor=pointer]:
+                    - /url: /members/sheenbr.455125/#badges
+                    - img [ref=e1306]
+                  - link [ref=e1308] [cursor=pointer]:
+                    - /url: /members/sheenbr.455125/#badges
+                    - img [ref=e1310]
+                  - link [ref=e1313] [cursor=pointer]:
+                    - /url: /members/sheenbr.455125/#badges
+                    - img [ref=e1315]
+                  - link [ref=e1317] [cursor=pointer]:
+                    - /url: /members/sheenbr.455125/#badges
+                    - img [ref=e1319]
+                  - link [ref=e1322] [cursor=pointer]:
+                    - /url: /members/sheenbr.455125/#badges
+                    - img [ref=e1324]
+              - generic [ref=e1326]:
+                - generic [ref=e1327]:
+                  - term [ref=e1328]: "Joined:"
+                  - definition [ref=e1329]: Feb 22, 2008
+                - generic [ref=e1330]:
+                  - term [ref=e1331]: "Messages:"
+                  - definition [ref=e1332]: 2,427
+                - generic [ref=e1333]:
+                  - term [ref=e1334]: "Reaction score:"
+                  - definition [ref=e1335]: "755"
+            - article [ref=e1341]:
+              - generic [ref=e1343]:
+                - text: I also have the same error.
+                - text: Can't see the cursor or even the textbox's for userid and password textures. Only the text I can see. Other textures are fine though. At least in login screen.
+        - article [ref=e1344]:
+          - generic [ref=e1345]:
+            - list [ref=e1346]:
+              - listitem [ref=e1347]:
+                - link "Jan 10, 2022" [ref=e1348] [cursor=pointer]:
+                  - /url: /threads/pt-source-x64-dx11-slikenet-rmlui.1202730/post-9110091
+                  - time [ref=e1349]: Jan 10, 2022
+            - list [ref=e1350]:
+              - listitem [ref=e1351]:
+                - link "Share" [ref=e1352] [cursor=pointer]:
+                  - /url: /threads/pt-source-x64-dx11-slikenet-rmlui.1202730/post-9110091
+                  - img [ref=e1354]
+              - listitem [ref=e1356]:
+                - link "#19" [ref=e1357] [cursor=pointer]:
+                  - /url: /threads/pt-source-x64-dx11-slikenet-rmlui.1202730/post-9110091
+          - generic [ref=e1358]:
+            - generic [ref=e1360]:
+              - link "bocadecao" [ref=e1363] [cursor=pointer]:
+                - /url: /members/bocadecao.704648/
+                - img "bocadecao" [ref=e1364]: B
+              - generic [ref=e1365]:
+                - heading "bocadecao" [level=4] [ref=e1367]:
+                  - link "bocadecao" [ref=e1368] [cursor=pointer]:
+                    - /url: /members/bocadecao.704648/
+                - heading "Socius Decennalis" [level=5] [ref=e1369]
+                - strong [ref=e1371]: Decennium
+                - generic [ref=e1372]:
+                  - link [ref=e1373] [cursor=pointer]:
+                    - /url: /members/bocadecao.704648/#badges
+                    - img [ref=e1375]
+                  - link [ref=e1377] [cursor=pointer]:
+                    - /url: /members/bocadecao.704648/#badges
+                    - img [ref=e1379]
+              - generic [ref=e1382]:
+                - generic [ref=e1383]:
+                  - term [ref=e1384]: "Joined:"
+                  - definition [ref=e1385]: May 30, 2009
+                - generic [ref=e1386]:
+                  - term [ref=e1387]: "Messages:"
+                  - definition [ref=e1388]: "190"
+                - generic [ref=e1389]:
+                  - term [ref=e1390]: "Reaction score:"
+                  - definition [ref=e1391]: "64"
+            - generic [ref=e1394]:
+              - article [ref=e1397]:
+                - generic [ref=e1399]:
+                  - text: About srAutoPlayCount logic, you should check about bit masks and bit operations in C. I don't remember very well how this works on PT, but PT server works based on ticks and when you quote this srAutoPlayCount & 0x3F, it means every time when this variable reach to 63 the condition will be true and the code is executed (something like srAutoPlayCount mod 63). I know that isn't the better explanation for this, but sometimes PT is very confusing to understand.
+                  - text: It is just a warning, probably some asset that try to load some texture, but isn't used on anything.
+                  - blockquote [ref=e1400]:
+                    - link "SheenBR said:" [ref=e1402] [cursor=pointer]:
+                      - /url: /goto/post?id=9110077
+                    - generic [ref=e1404]:
+                      - text: I also have the same error.
+                      - text: Can't see the cursor or even the textbox's for userid and password textures. Only the text I can see. Other textures are fine though. At least in login screen.
+                  - text: Try it plz
+                  - generic "bocadecao - PT Source x64 + DX11 + SLikeNet + RmlUI - RaGEZONE Forums" [ref=e1405]:
+                    - img "bocadecao - PT Source x64 + DX11 + SLikeNet + RmlUI - RaGEZONE Forums" [ref=e1406]
+              - generic [ref=e1408]:
+                - list [ref=e1409]:
+                  - listitem [ref=e1410]:
+                    - img "Like" [ref=e1412]
+                - generic [ref=e1413]: "Reactions:"
+                - link "SheenBR" [ref=e1414] [cursor=pointer]:
+                  - /url: /posts/9110091/reactions
+        - article [ref=e1415]:
+          - generic [ref=e1416]:
+            - list [ref=e1417]:
+              - listitem [ref=e1418]:
+                - link "Jan 11, 2022" [ref=e1419] [cursor=pointer]:
+                  - /url: /threads/pt-source-x64-dx11-slikenet-rmlui.1202730/post-9110095
+                  - time [ref=e1420]: Jan 11, 2022
+            - list [ref=e1421]:
+              - listitem [ref=e1422]:
+                - link "Share" [ref=e1423] [cursor=pointer]:
+                  - /url: /threads/pt-source-x64-dx11-slikenet-rmlui.1202730/post-9110095
+                  - img [ref=e1425]
+              - listitem [ref=e1427]:
+                - link "#20" [ref=e1428] [cursor=pointer]:
+                  - /url: /threads/pt-source-x64-dx11-slikenet-rmlui.1202730/post-9110095
+          - generic [ref=e1429]:
+            - generic [ref=e1431]:
+              - link "SheenBR" [ref=e1434] [cursor=pointer]:
+                - /url: /members/sheenbr.455125/
+                - img "SheenBR" [ref=e1435]
+              - generic [ref=e1436]:
+                - heading "SheenBR" [level=4] [ref=e1438]:
+                  - link "SheenBR" [ref=e1439] [cursor=pointer]:
+                    - /url: /members/sheenbr.455125/
+                - heading "Moderator" [level=5] [ref=e1440]
+                - strong [ref=e1442]: Staff member
+                - strong [ref=e1444]: Moderator
+                - generic [ref=e1445]:
+                  - link [ref=e1446] [cursor=pointer]:
+                    - /url: /members/sheenbr.455125/#badges
+                    - img [ref=e1448]
+                  - link [ref=e1450] [cursor=pointer]:
+                    - /url: /members/sheenbr.455125/#badges
+                    - img [ref=e1452]
+                  - link [ref=e1455] [cursor=pointer]:
+                    - /url: /members/sheenbr.455125/#badges
+                    - img [ref=e1457]
+                  - link [ref=e1459] [cursor=pointer]:
+                    - /url: /members/sheenbr.455125/#badges
+                    - img [ref=e1461]
+                  - link [ref=e1464] [cursor=pointer]:
+                    - /url: /members/sheenbr.455125/#badges
+                    - img [ref=e1466]
+              - generic [ref=e1468]:
+                - generic [ref=e1469]:
+                  - term [ref=e1470]: "Joined:"
+                  - definition [ref=e1471]: Feb 22, 2008
+                - generic [ref=e1472]:
+                  - term [ref=e1473]: "Messages:"
+                  - definition [ref=e1474]: 2,427
+                - generic [ref=e1475]:
+                  - term [ref=e1476]: "Reaction score:"
+                  - definition [ref=e1477]: "755"
+            - generic [ref=e1480]:
+              - generic [ref=e1481]:
+                - article [ref=e1483]:
+                  - generic [ref=e1485]:
+                    - text: Cursor is working fine now. The InputBox missing texture is "fine" then I suppose?
+                    - text: About that dataserver project, is it just a preparation for something that isn't removed from gameserver? I mean, does gameserver has what's necessary to support online players? (Assuming I already fixed the database and other stuff that you mentioned)
+                    - text: That srAutoPlayCount is really confusing. If it only executes each 63 additions to that variable, meaning each addition is 100ms, why didn't they just use sleep method or something?
+                    - text: "--Editt"
+                    - text: I tried to run the server with the provided server files and yet no NPC is visible. Anything to fix ?
+                    - text: "Another bug I found for anyone willing to fix it: Something with directx window perspective is wrong. When you maximize the window, **** goes crazy. xD No clue how to fix it. Maybe somebody can =D"
+                - generic [ref=e1486]:
+                  - text: "Last edited:"
+                  - time [ref=e1487]: Jan 11, 2022
+              - generic [ref=e1489]:
+                - list [ref=e1490]:
+                  - listitem [ref=e1491]:
+                    - img "Like" [ref=e1493]
+                - generic [ref=e1494]: "Reactions:"
+                - link "SpaceX" [ref=e1495] [cursor=pointer]:
+                  - /url: /posts/9110095/reactions
+      - generic [ref=e1496]:
+        - navigation [ref=e1498]:
+          - generic [ref=e1499]:
+            - list [ref=e1500]:
+              - listitem [ref=e1501] [cursor=pointer]:
+                - link "1" [ref=e1502]:
+                  - /url: /threads/pt-source-x64-dx11-slikenet-rmlui.1202730/
+              - listitem [ref=e1503]:
+                - link "2" [ref=e1504] [cursor=pointer]:
+                  - /url: /threads/pt-source-x64-dx11-slikenet-rmlui.1202730/page-2
+              - listitem [ref=e1505]:
+                - link "3" [ref=e1506] [cursor=pointer]:
+                  - /url: /threads/pt-source-x64-dx11-slikenet-rmlui.1202730/page-3
+            - link "Next" [ref=e1507] [cursor=pointer]:
+              - /url: /threads/pt-source-x64-dx11-slikenet-rmlui.1202730/page-2
+        - link "You must log in or register to reply here." [ref=e1509] [cursor=pointer]:
+          - /url: /login/
+          - generic [ref=e1510]: You must log in or register to reply here.
+  - generic [ref=e1514]:
+    - generic [ref=e1516]:
+      - heading "RaGEZONE Sponsor" [level=3] [ref=e1517]
+      - list [ref=e1518]:
+        - link "HyperFilter" [ref=e1519] [cursor=pointer]:
+          - /url: https://bit.ly/3ztZXnj
+          - img "HyperFilter" [ref=e1520]
+    - generic [ref=e1522]:
+      - heading "About RaGEZONE" [level=3] [ref=e1523]
+      - generic [ref=e1524]: RaGEZONE® is the top forum for MMO, MMORPG, and mobile game development. We provide binaries, source codes, and tutorials for your favorite games, making it the go-to resource for developers and fans. You can also find and share private servers, fostering a vibrant gamer community.
+    - generic [ref=e1527]:
+      - heading "Forum Statistics" [level=3] [ref=e1528]
+      - generic [ref=e1529]:
+        - generic [ref=e1530]:
+          - term [ref=e1531]: "Members online:"
+          - definition [ref=e1532]: 1,447
+        - generic [ref=e1533]:
+          - term [ref=e1534]: "Guests online:"
+          - definition [ref=e1535]: 51,971
+        - generic [ref=e1536]:
+          - term [ref=e1537]: "Total visitors:"
+          - definition [ref=e1538]: 53,418
+      - generic [ref=e1539]: Totals may include hidden visitors.
+    - generic [ref=e1541]:
+      - heading "RaGEZONE Partners" [level=3] [ref=e1542]
+      - list [ref=e1543]:
+        - link "UK sites not on GamStop" [ref=e1545] [cursor=pointer]:
+          - /url: https://yeovilhospital.co.uk/
+          - img "UK sites not on GamStop" [ref=e1546]
+  - contentinfo [ref=e1547]:
+    - generic [ref=e1548]:
+      - generic [ref=e1549]:
+        - list [ref=e1551]:
+          - listitem [ref=e1552]:
+            - link "RaGEZONE®" [ref=e1553] [cursor=pointer]:
+              - /url: /misc/style
+              - img [ref=e1555]
+              - text: RaGEZONE®
+            - button "Style variation" [ref=e1557] [cursor=pointer]:
+              - img "Style variation" [ref=e1559]
+        - list [ref=e1562]:
+          - listitem [ref=e1563]:
+            - link "Contact us" [ref=e1564] [cursor=pointer]:
+              - /url: /misc/contact
+          - listitem [ref=e1565]:
+            - link "Privacy policy" [ref=e1566] [cursor=pointer]:
+              - /url: https://ragezone.com/privacy-policy/
+          - listitem [ref=e1567]:
+            - link "Help" [ref=e1568] [cursor=pointer]:
+              - /url: /help/
+          - listitem [ref=e1569]:
+            - link "Home" [ref=e1570] [cursor=pointer]:
+              - /url: https://forum.ragezone.com
+          - listitem [ref=e1571]:
+            - link "RSS" [ref=e1572] [cursor=pointer]:
+              - /url: /community/-/index.rss
+              - generic [ref=e1573]:
+                - img [ref=e1575]
+                - generic [ref=e1577]: RSS
+      - generic [ref=e1578]:
+        - link "Community platform by XenForo® © 2010-2025 XenForo Ltd." [ref=e1579] [cursor=pointer]:
+          - /url: https://xenforo.com
+          - text: Community platform by XenForo
+          - superscript [ref=e1580]: ®
+          - text: © 2010-2025 XenForo Ltd.
+        - text: Sponsored by
+        - link "HyperFilter" [ref=e1581] [cursor=pointer]:
+          - /url: https://www.hyperfilter.com/panel/link.php?id=4
+        - text: "- Powered by"
+        - link "LiteSpeed" [ref=e1582] [cursor=pointer]:
+          - /url: https://litespeedtech.com/
+        - text: "- MySQL tuning by"
+        - link "Releem" [ref=e1583] [cursor=pointer]:
+          - /url: https://releem.com/
+        - text: .
+        - link "RaGEZONE®" [ref=e1584] [cursor=pointer]:
+          - /url: https://trademarks.ipo.gov.uk/ipo-tmcase/page/Results/1/UK00003000837
+        - text: is a registered trademark.
