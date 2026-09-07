@@ -2,7 +2,7 @@
 
 ## Requisitos Previos
 
-- **Unity** 2022.3.39f1 LTS (ya debe tener el addon MCP for Unity)
+- **Unity** 6 (`6000.5.0f1`) — el paquete `com.coplaydev.unity-mcp` viene embebido en `Packages/`
 - **Blender** 5.x (ya debe tener el addon Blender MCP)
 - **Claude Code** instalado
 - **Python 3.10+** con `uv` (para Blender MCP)

@@ -25,7 +25,7 @@ Documentación oficial sobre los Model Context Protocol (MCPs) utilizados en Zor
 
 ## 📋 Requisitos
 
-- **Unity**: 2022.3.39f1 LTS (con addon MCP for Unity instalado)
+- **Unity**: 6 (`6000.5.0f1`) — paquete `com.coplaydev.unity-mcp` embebido en `Packages/`
 - **Blender**: 5.x (con addon Blender MCP instalado)
 - **Claude Code**: Versión actual
 - **.mcp.json**: Configurado en la raíz del proyecto

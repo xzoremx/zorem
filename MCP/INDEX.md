@@ -30,14 +30,15 @@ Panel lateral (N) > Pestaña "Blender MCP" > Verificar servidor activo
 ```
 MCP/
 ├── INDEX.md               (este archivo)
-├── docs/
-│   ├── README.md
-│   ├── 01_Instalacion.md
-│   ├── 02_Uso.md
-│   └── 03_Referencia.md
-├── .mcp.json             (configuración de Claude Code)
-└── scripts/              (utilidades, si existen)
+└── docs/
+    ├── README.md
+    ├── 01_Instalacion.md
+    ├── 02_Uso.md
+    └── 03_Referencia.md
 ```
+
+La configuración de los servidores vive en `.mcp.json`, en la **raíz del proyecto** (no dentro de `MCP/`).
+El servidor de Unity es el paquete `com.coplaydev.unity-mcp`, embebido en `Packages/`; el de Blender se lanza con `uvx blender-mcp`. Esta carpeta contiene solo documentación.
 
 ## 🎯 MCPs Disponibles
 
@@ -62,4 +63,4 @@ MCP/
 
 ---
 
-**Última actualización:** 2026-06-11
+**Última actualización:** 2026-09-06
