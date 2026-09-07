@@ -5,20 +5,21 @@
 
 ## Sistemas a implementar
 
-### 1. Sprint (DONE parcial)
+### 1. Sprint (implementado)
 - **Tecla:** `Shift` (manual, no auto-sprint)
 - **Estado actual:** funciona con `PlayerInput.SprintInput()`
 - **Pendiente:** asegurar transición suave de animación walk → run → sprint
 
 ---
 
-### 2. Slide
-- **Activación:** Sprint + `Ctrl`
-- **Comportamiento:** deslizamiento plano (sin física de pendiente)
-- **Duración:** fija (~1.0s) o hasta que el jugador suelte o salte
-- **Hitbox:** CapsuleCollider se reduce al agacharse durante el slide
-- **Animación:** transición a pose de slide
-- **Scripts a crear/modificar:** `PlayerInput`, `PlayerController`, `PlayerAnimator`
+### 2. Slide (implementado, falta animación)
+- **Activación:** Sprint + `Ctrl` (`PlayerInput.CrouchSlideInput()` → `SlideConditions()`)
+- **Comportamiento:** deslizamiento plano (sin física de pendiente), dirección congelada al iniciar
+- **Duración:** `slideDuration = 1f`, o hasta soltar `Ctrl`, saltar o perder el suelo
+- **Velocidad:** `slideSpeed = 8f`
+- **Hitbox:** collider reducido al 50% (`slideColliderHeightMultiplier`) manteniendo la base fija para no clipear el suelo
+- **Estado:** `lockMovement` y `lockRotation` activos durante el slide
+- **Pendiente:** parámetro `IsSliding` en el Animator + clip de slide
 
 ---
 
@@ -46,13 +47,14 @@
 
 ---
 
-### 6. Crouch
-- **Tecla:** `Ctrl` (sin sprint = crouch normal)
-- **Comportamiento:** personaje se agacha, velocidad reducida (~50%), hitbox baja
-- **CapsuleCollider:** height reducida a ~1.0m, center ajustado
+### 6. Crouch (implementado, falta animación propia)
+- **Tecla:** `Ctrl` (sin sprint = crouch normal; con sprint = slide)
+- **Comportamiento:** personaje se agacha, velocidad al 50% (`crouchSpeedMultiplier`), hitbox baja
+- **CapsuleCollider:** height al 60% (`crouchColliderHeightMultiplier`), center compensado para mantener la base fija
 - **Cámara:** baja con el personaje (ThirdPersonCamera ya sigue el target)
 - **Toggle o hold:** hold (suelta Ctrl para levantarse)
-- **Verificación al levantarse:** raycast hacia arriba para evitar levantarse dentro de geometría
+- **Verificación al levantarse:** `CanStandUp()` hace un SphereCast hacia arriba; si no hay espacio, queda en `wantsToStandUp` y se levanta en cuanto se libera
+- **Pendiente:** clips `Crouch Idle` y `Crouch Walk` en el Animator (el parámetro `IsCrouching` ya existe)
 
 ---
 
@@ -96,18 +98,25 @@
 
 ## Estado de implementación
 
-| Sistema | Estado |
-|---|---|
-| Sprint (Shift) | ✅ Funciona |
-| Slide | ❌ Pendiente |
-| Vault | ❌ Pendiente |
-| Coyote Time | ❌ Pendiente |
-| Jump Buffering | ❌ Pendiente |
-| Crouch | ❌ Pendiente |
-| Landing Recovery | ❌ Pendiente |
-| Camera Tilt | ❌ Pendiente |
-| FOV Boost Sprint | ❌ Pendiente |
-| Step-Up Suave | ❌ Pendiente |
+| Sistema | Estado | Notas |
+|---|---|---|
+| Sprint (Shift) | ✅ Funciona | `PlayerInput.SprintInput()` → `PlayerController.Sprint()` |
+| Slide | ⚠️ Lógica lista, sin animación | `PlayerMotor.StartSlide/EndSlide/ControlSlideBehaviour`. Falta el parámetro `IsSliding` en el Animator |
+| Crouch | ⚠️ Lógica lista, sin animación propia | `PlayerMotor.StartCrouch/StopCrouch/CanStandUp`. El Animator ya tiene `IsCrouching` pero sin clips nuevos |
+| Vault | ❌ Pendiente | `VaultDetector.cs` sin crear |
+| Coyote Time | ❌ Pendiente | |
+| Jump Buffering | ❌ Pendiente | |
+| Landing Recovery | ❌ Pendiente | `heightReached` ya se registra en `PlayerMotor` |
+| Camera Tilt | ❌ Pendiente | |
+| FOV Boost Sprint | ❌ Pendiente | |
+| Step-Up Suave | ❌ Pendiente | |
+
+### Bloqueantes antes de seguir
+
+1. **`IsSliding` no existe en el Animator Controller.** La escena `PlayerTestScene` usa `Invector@BasicLocomotion.controller`, que declara `IsCrouching` pero no `IsSliding`. `PlayerAnimator.UpdateAnimator()` lo escribe cada frame → warnings en consola y el slide sin animación.
+2. **`DefaultPlayerController.controller` está vacío** (0 estados, 7 parámetros) y ninguna escena lo referencia. O se puebla, o se borra.
+3. **No hay prefab de Player.** El jugador está suelto en `PlayerTestScene`. Conviene extraerlo antes de añadir más sistemas.
+4. **Verificar `crouchSlideInput` en la escena.** La instancia serializada de `PlayerInput` en `PlayerTestScene.unity` no incluye el campo; confirmar en el Inspector que quedó en `LeftControl` y no en `None`.
 
 ---
 

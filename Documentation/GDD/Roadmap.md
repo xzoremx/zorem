@@ -6,18 +6,28 @@
 
 ---
 
+## Estado actual: FASE 1 en curso
+
+Fase activa: **1 (Fundación)**. Fases 2-5 sin empezar.
+
+Detalle de locomoción en [Etapa_1/locomotion.md](Etapa_1/locomotion.md).
+
+---
+
 ## FASE 1: Fundación
 > El personaje se mueve y pelea.
 
 ### Tareas
-| Tarea | Sistema |
-|-------|---------|
-| Player Controller (caminar, correr, saltar) | Core |
-| Cámara 3ª persona con collision avoidance y lock-on | Core |
-| Combate melee (ataques, hit detection, daño) | Combat |
-| Web shooters (enganche + balanceo) | Symbiote |
-| Bombas de impulso | Symbiote |
-| Parkour básico (wall-run, vault, slide) | Movement |
+| Tarea | Sistema | Estado |
+|-------|---------|--------|
+| Player Controller (caminar, correr, saltar) | Core | ✅ Hecho (port de Invector LITE a `ZoremGame.Player`) |
+| Slide y Crouch | Movement | ⚠️ Lógica lista, falta animación |
+| Cámara 3ª persona con collision avoidance y lock-on | Core | ⚠️ Básica; sin collision avoidance ni lock-on |
+| Combate melee (ataques, hit detection, daño) | Combat | ❌ Pendiente |
+| Web shooters (enganche + balanceo) | Symbiote | ❌ Pendiente |
+| Bombas de impulso | Symbiote | ❌ Pendiente |
+| Parkour básico (wall-run, vault) | Movement | ❌ Pendiente |
+| Prefab de Player (requisito para FASE 3) | Core | ❌ Pendiente |
 
 ### Entregable
 > Un personaje jugable en un mapa de prueba que pelea y se mueve como Spider-Man Symbiote.
