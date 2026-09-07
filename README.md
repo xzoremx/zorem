@@ -15,17 +15,45 @@ Juego de acción 3D multijugador indie con mecánicas de movimiento por simbiont
 
 ---
 
+## Estado actual (FASE 1 — Fundación)
+
+Lo que existe hoy en el repo, no lo planificado:
+
+| Sistema | Estado | Dónde |
+|---|---|---|
+| Locomoción base (caminar, correr, sprint, salto, strafe) | Funcional | `Assets/Scripts/Player/` |
+| Slide | Lógica lista, sin animación | `PlayerMotor.cs` |
+| Crouch | Lógica lista (con check de espacio libre al levantarse) | `PlayerMotor.cs` |
+| Cámara 3ª persona | Básica (sin tilt, sin FOV dinámico, sin lock-on) | `ThirdPersonCamera.cs` |
+| Combate melee | No iniciado | — |
+| Sistema Simbionte | No iniciado | — |
+| Networking | No iniciado (FishNet/Steamworks aún no instalados) | — |
+
+El controlador de jugador es un port del **Invector 3rd Person Controller LITE** al namespace `ZoremGame.Player`, con Slide y Crouch añadidos encima. Jerarquía: `PlayerMotor` → `PlayerAnimator` → `PlayerController`, más `PlayerInput` y `ThirdPersonCamera`.
+
+### Bloqueantes conocidos
+
+- El parámetro `IsSliding` no existe en el Animator Controller en uso (`Invector@BasicLocomotion.controller`), pero `PlayerAnimator` lo escribe cada frame → warnings en consola y slide sin animación.
+- `Assets/Scripts/Player/Animators/DefaultPlayerController.controller` está vacío (0 estados) y no lo usa ninguna escena.
+- No hay prefab de Player: el jugador vive suelto en `Assets/Scenes/PlayerTestScene.unity`. Requisito previo para la FASE 3 (multijugador).
+
+---
+
 ## Stack Técnico
 
 | Componente | Tecnología |
 |---|---|
-| Motor | Unity 2022.3.39f1 LTS |
+| Motor | Unity 6 (`6000.5.0f1`) |
+| Render Pipeline | URP (`com.unity.render-pipelines.universal` 17.0.3) |
 | Lenguaje | C# |
-| Networking | FishNet + SteamNetworkingSockets |
-| Plataforma | Steamworks.NET |
-| Modelado 3D | Blender 5.1 |
+| Input | Legacy Input Manager (`Input.GetAxis` / `Input.GetKey`) |
+| Networking *(planificado)* | FishNet + SteamNetworkingSockets |
+| Plataforma *(planificado)* | Steamworks.NET |
+| Modelado 3D | Blender 5.x |
 | Infraestructura | $0 (P2P via Steam) |
-| Asistente IA | Claude Code o Codex + MCP Unity + MCP Blender |
+| Asistente IA | Claude Code o Codex + MCP for Unity + MCP Blender |
+
+> Las filas marcadas *(planificado)* todavía no aparecen en `Packages/manifest.json`.
 
 ---
 
@@ -34,68 +62,59 @@ Juego de acción 3D multijugador indie con mecánicas de movimiento por simbiont
 ```
 ZoremGame/
 ├── Assets/
-│   ├── Animations/         # Animaciones de personajes, bosses, simbionte
-│   ├── Audio/              # Música y SFX
-│   │   ├── Music/          # Tracks por mapa + boss fight + menú
-│   │   └── SFX/            # Combat, movement, UI, items, simbionte
-│   ├── Materials/          # Materiales de personajes, entorno, VFX
-│   ├── Models/             # Modelos 3D (FBX)
-│   │   ├── Characters/
-│   │   ├── Bosses/
-│   │   ├── Environment/
-│   │   └── Weapons/
-│   ├── Prefabs/            # GameObjects reutilizables
-│   │   ├── Characters/
-│   │   ├── Bosses/
-│   │   ├── Items/
-│   │   └── Systems/
+│   ├── Animations/         # Animaciones de personajes, bosses, simbionte (scaffolding vacío)
+│   ├── Audio/              # Música y SFX (scaffolding vacío)
+│   ├── Environment/        # Geometría generada por las herramientas de editor
+│   ├── Invector-3rdPersonController_LITE/   # Asset base: modelo VBOT, animator, escena demo
+│   ├── Materials/
+│   ├── Models/             # Modelos 3D (FBX) (scaffolding vacío)
+│   ├── Prefabs/            # GameObjects reutilizables (scaffolding vacío)
 │   ├── Scenes/
-│   │   ├── MainMenu/
-│   │   ├── Maps/           # Map_01 → Map_04
-│   │   ├── BossFight/
-│   │   └── DevScenes/
+│   │   ├── PlayerTestScene.unity   # Escena de pruebas de locomoción
+│   │   └── SampleScene.unity
+│   ├── Screenshots/
+│   ├── Settings/           # Assets de configuración de URP
+│   ├── Shaders/            # (scaffolding vacío)
+│   ├── UI/                 # (scaffolding vacío)
 │   └── Scripts/
-│       ├── AI/
-│       ├── Boss/
-│       ├── Combat/
-│       ├── Core/
-│       ├── Movement/
-│       ├── Networking/
-│       ├── Player/
-│       ├── Symbiote/
-│       └── UI/
-├── MCP/                    # Model Context Protocol servers
-│   ├── servers/
-│   │   ├── unity/          # MCP Unity básico (file I/O)
-│   │   └── blender/        # MCP Blender (modelado y exportación)
-│   └── docs/               # Documentación de implementación MCP
-├── BlenderAssets/          # Archivos .blend de trabajo
-├── Packages/               # Unity Package Manager
+│       ├── Editor/         # TerrainLandscapeBuilder, TestPlaygroundBuilder, UrpMaterialFixer
+│       └── Player/         # PlayerMotor, PlayerAnimator, PlayerController, PlayerInput, ThirdPersonCamera
+├── MCP/                    # Documentación de uso de los MCPs
+│   ├── INDEX.md
+│   └── docs/
+├── BlenderAssets/          # Archivos .blend de trabajo (Git LFS)
+├── Documentation/
+│   ├── GDD/                # Roadmap, sistemas de desarrollo, specs por etapa
+│   ├── Future/             # Visión completa a largo plazo
+│   └── Lore/
+├── Packages/               # Unity Package Manager (incluye com.coplaydev.unity-mcp embebido)
+├── .mcp.json               # Configuración de MCPs para Claude Code / Codex
 └── ProjectSettings/
 ```
+
+Buena parte de las carpetas de `Assets/` existen solo con `.gitkeep` como scaffolding para fases posteriores.
 
 ---
 
 ## MCPs (Model Context Protocol)
 
-El proyecto usa MCPs para que Claude Code y Codex interactúen directamente con Unity y Blender sin copiar-pegar código manualmente.
+El proyecto usa MCPs para que Claude Code y Codex interactúen directamente con Unity y Blender sin copiar-pegar código manualmente. La configuración vive en `.mcp.json` en la raíz del proyecto.
 
-### MCP Unity (MCP for Unity — CoplayDev)
-Conecta el asistente directamente con el Unity Editor en tiempo real. 30+ tools:
+### MCP for Unity (CoplayDev)
+Paquete de Unity embebido en `Packages/com.coplaydev.unity-mcp/`, servido por FastMCP (Python). Conecta el asistente directamente con el Unity Editor en tiempo real. 30+ tools:
 - Crear/modificar/eliminar scripts C#
 - Gestionar GameObjects, prefabs, escenas
 - Modificar materiales, componentes, física
 - Leer la consola, compilar, ejecutar tests
 
-Estado actual: el MCP de Unity ya fue verificado funcionando tanto en Claude Code como en Codex.
+Se expone por HTTP en `http://localhost:8080/mcp`. El servidor lo arranca Unity, no Claude Code.
 
 ### MCP Blender
-Servidor Node.js propio que controla Blender via CLI:
-- Crear modelos 3D básicos
-- Agregar rigs/armaduras
+Servidor `blender-mcp` lanzado vía `uvx`, que habla con el addon Blender MCP por el puerto `9876`:
+- Inspeccionar y modificar la escena
+- Crear modelos 3D y rigs
 - Exportar a FBX/GLB
-
-Estado actual: el MCP de Blender ya fue verificado funcionando tanto en Claude Code como en Codex.
+- Capturas del viewport
 
 ---
 
@@ -171,24 +190,30 @@ Ya puedes pedirle a Claude Code o Codex acciones directas sobre Blender:
 ```
 
 ### Notas importantes
-- El servidor MCP **se detiene** cuando cierras Unity. Debes iniciarlo de nuevo cada sesión.
+- El servidor MCP de Unity **se detiene** cuando cierras Unity. Debes iniciarlo de nuevo cada sesión.
 - Si Claude Code o Codex pierde conexión con Unity, vuelve al paso 2 y reinicia el servidor.
 - Si Claude Code o Codex pierde conexión con Blender, reconecta el servidor desde el panel **Blender MCP**.
 - El `.mcp.json` del proyecto registra ambos servidores para que Claude Code y Codex puedan conectarse a Unity y Blender desde esta carpeta.
 
 ---
 
+## Herramientas de Editor
+
+Disponibles desde el menú `ZoremGame` en Unity:
+
+| Herramienta | Qué hace |
+|---|---|
+| `Fix URP Materials` | Reemplaza shaders Built-in rotos (magenta tras migrar a URP) por `Universal Render Pipeline/Lit`, conservando color y textura principal |
+| `TerrainLandscapeBuilder` | Genera terreno de pruebas |
+| `TestPlaygroundBuilder` | Genera el playground de locomoción (rampas, escalones, obstáculos) |
+
+---
+
 ## Requisitos para Colaboradores
 
-```bash
-# Instalar dependencias de los MCP servers
-cd MCP/servers/unity && npm install && npm run build
-cd MCP/servers/blender && npm install && npm run build
-```
+- Unity: `6000.5.0f1` (Unity 6) con URP
+- Blender: `5.x` con el addon Blender MCP habilitado
+- Python: `3.10+` + `uv` / `uvx` (para MCP for Unity y `blender-mcp`)
+- Git LFS (los `.blend` de `BlenderAssets/` se gestionan con LFS)
 
-Actualizar las rutas en `.mcp.json` según tu instalación local de Unity y Blender.
-
-- Unity: `2022.3.39f1` LTS
-- Blender: `5.x`
-- Node.js: `v18+`
-- Python: `3.10+` + `uv` (para MCP for Unity)
+El paquete `com.coplaydev.unity-mcp` viene embebido en `Packages/`, así que no requiere instalación aparte. Solo hay que ajustar la ruta de `uvx` en `.mcp.json` según tu instalación local.
