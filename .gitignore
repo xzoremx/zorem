@@ -66,12 +66,6 @@ Thumbs.db
 *.blend@
 *.crash
 
-# MCP Servers - dependencias y compilados (generados, no commitear)
-# ------------------------------------------------------------------
-MCP/servers/unity/node_modules/
-MCP/servers/unity/build/
-MCP/servers/blender/node_modules/
-MCP/servers/blender/build/
 # Logs locales de herramientas (Playwright MCP)
 # ---------------------------------------------
 .playwright-mcp/
