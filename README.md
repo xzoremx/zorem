@@ -72,7 +72,6 @@ ZoremGame/
 │   ├── Scenes/
 │   │   ├── PlayerTestScene.unity   # Escena de pruebas de locomoción
 │   │   └── SampleScene.unity
-│   ├── Screenshots/
 │   ├── Settings/           # Assets de configuración de URP
 │   ├── Shaders/            # (scaffolding vacío)
 │   ├── UI/                 # (scaffolding vacío)
@@ -86,7 +85,8 @@ ZoremGame/
 ├── Documentation/
 │   ├── GDD/                # Roadmap, sistemas de desarrollo, specs por etapa
 │   ├── Future/             # Visión completa a largo plazo
-│   └── Lore/
+│   ├── Lore/
+│   └── Screenshots/        # Capturas del editor (fuera de Assets para que Unity no las importe)
 ├── Packages/               # Unity Package Manager (incluye com.coplaydev.unity-mcp embebido)
 ├── .mcp.json               # Configuración de MCPs para Claude Code / Codex
 └── ProjectSettings/
