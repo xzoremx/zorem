@@ -156,7 +156,7 @@ En Unity:
 
 **Paso 1: Generar Script**
 ```
-Crea un script "BossAI.cs" en Assets/Scripts/Boss/ que implemente:
+Crea un script "BossAI.cs" en Assets/Scripts/Bosses/ que implemente:
 - Patrón de patrulla
 - Detección del jugador
 - Ataque básico
