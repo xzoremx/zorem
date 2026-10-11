@@ -62,22 +62,18 @@ El controlador de jugador es un port del **Invector 3rd Person Controller LITE**
 ```
 ZoremGame/
 ├── Assets/
-│   ├── Animations/         # Animaciones de personajes, bosses, simbionte (scaffolding vacío)
-│   ├── Audio/              # Música y SFX (scaffolding vacío)
+│   ├── Animations/
+│   │   └── Characters/     # DefaultPlayerController.controller
 │   ├── Environment/        # Geometría generada por las herramientas de editor
-│   ├── Materials/
-│   ├── Models/             # Modelos 3D (FBX) (scaffolding vacío)
-│   ├── Prefabs/            # GameObjects reutilizables (scaffolding vacío)
 │   ├── Scenes/
 │   │   └── PlayerTestScene.unity   # Escena de pruebas de locomoción
 │   ├── Settings/           # Assets de configuración de URP
-│   ├── Shaders/            # (scaffolding vacío)
 │   ├── ThirdParty/
 │   │   └── Invector-3rdPersonController_LITE/   # Asset base: modelo VBOT, animator
-│   ├── UI/                 # (scaffolding vacío)
 │   └── Scripts/
+│       ├── Camera/         # ThirdPersonCamera
 │       ├── Editor/         # TerrainLandscapeBuilder, TestPlaygroundBuilder, UrpMaterialFixer
-│       └── Player/         # PlayerMotor, PlayerAnimator, PlayerController, PlayerInput, ThirdPersonCamera
+│       └── Player/         # PlayerMotor, PlayerAnimator, PlayerController, PlayerInput
 ├── MCP/                    # Documentación de uso de los MCPs
 │   ├── INDEX.md
 │   └── docs/
@@ -92,7 +88,7 @@ ZoremGame/
 └── ProjectSettings/
 ```
 
-Buena parte de las carpetas de `Assets/` existen solo con `.gitkeep` como scaffolding para fases posteriores.
+`Assets/` solo contiene carpetas con contenido real. Las de cada sistema (Combat, Symbiote, Audio, Prefabs…) se crean al empezar la fase que las necesita, siguiendo los nombres del GDD.
 
 ---
 

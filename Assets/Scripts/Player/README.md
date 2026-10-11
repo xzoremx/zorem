@@ -8,10 +8,6 @@ Assets/Scripts/Player/
 ├── PlayerAnimator.cs          (Sincronización Animator)
 ├── PlayerController.cs        (Control de movimiento, sprint, strafe, jump)
 ├── PlayerInput.cs             (Manejo de input)
-├── Editor/
-│   ├── QuickPlayerSetup.cs    (Menú rápido de setup)
-│   ├── PlayerSetupEditor.cs   (Ventana de configuración)
-│   └── AnimatorSetup.cs       (Generador de AnimatorController)
 ├── SETUP_GUIDE.md             (Guía de configuración)
 └── README.md                  (Este archivo)
 ```
