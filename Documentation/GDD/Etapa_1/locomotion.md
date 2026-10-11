@@ -128,7 +128,7 @@
 | `Assets/Scripts/Player/PlayerMotor.cs` | Coyote time, Step-up, Landing height tracker |
 | `Assets/Scripts/Player/PlayerController.cs` | Slide state, Crouch state, Landing recovery |
 | `Assets/Scripts/Player/PlayerAnimator.cs` | Nuevos parámetros: IsSliding, IsCrouching, LandType |
-| `Assets/Scripts/Player/ThirdPersonCamera.cs` | Camera tilt, FOV boost |
+| `Assets/Scripts/Camera/ThirdPersonCamera.cs` | Camera tilt, FOV boost |
 | `Assets/Scripts/Player/VaultDetector.cs` | **Nuevo** — detección y ejecución de vault |
 
 ---

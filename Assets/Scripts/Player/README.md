@@ -8,7 +8,6 @@ Assets/Scripts/Player/
 ├── PlayerAnimator.cs          (Sincronización Animator)
 ├── PlayerController.cs        (Control de movimiento, sprint, strafe, jump)
 ├── PlayerInput.cs             (Manejo de input)
-├── ThirdPersonCamera.cs       (Cámara orbital con collision avoidance)
 ├── Editor/
 │   ├── QuickPlayerSetup.cs    (Menú rápido de setup)
 │   ├── PlayerSetupEditor.cs   (Ventana de configuración)
@@ -18,6 +17,8 @@ Assets/Scripts/Player/
 ├── SETUP_GUIDE.md             (Guía de configuración)
 └── README.md                  (Este archivo)
 ```
+
+La cámara (`ThirdPersonCamera.cs`, orbital con collision avoidance) vive en `Assets/Scripts/Camera/`.
 
 ## 🔗 Jerarquía de Herencia
 
