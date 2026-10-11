@@ -70,8 +70,7 @@ ZoremGame/
 │   ├── Models/             # Modelos 3D (FBX) (scaffolding vacío)
 │   ├── Prefabs/            # GameObjects reutilizables (scaffolding vacío)
 │   ├── Scenes/
-│   │   ├── PlayerTestScene.unity   # Escena de pruebas de locomoción
-│   │   └── SampleScene.unity
+│   │   └── PlayerTestScene.unity   # Escena de pruebas de locomoción
 │   ├── Settings/           # Assets de configuración de URP
 │   ├── Shaders/            # (scaffolding vacío)
 │   ├── UI/                 # (scaffolding vacío)
