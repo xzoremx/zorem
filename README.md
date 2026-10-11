@@ -65,7 +65,6 @@ ZoremGame/
 │   ├── Animations/         # Animaciones de personajes, bosses, simbionte (scaffolding vacío)
 │   ├── Audio/              # Música y SFX (scaffolding vacío)
 │   ├── Environment/        # Geometría generada por las herramientas de editor
-│   ├── Invector-3rdPersonController_LITE/   # Asset base: modelo VBOT, animator, escena demo
 │   ├── Materials/
 │   ├── Models/             # Modelos 3D (FBX) (scaffolding vacío)
 │   ├── Prefabs/            # GameObjects reutilizables (scaffolding vacío)
@@ -73,6 +72,8 @@ ZoremGame/
 │   │   └── PlayerTestScene.unity   # Escena de pruebas de locomoción
 │   ├── Settings/           # Assets de configuración de URP
 │   ├── Shaders/            # (scaffolding vacío)
+│   ├── ThirdParty/
+│   │   └── Invector-3rdPersonController_LITE/   # Asset base: modelo VBOT, animator
 │   ├── UI/                 # (scaffolding vacío)
 │   └── Scripts/
 │       ├── Editor/         # TerrainLandscapeBuilder, TestPlaygroundBuilder, UrpMaterialFixer

@@ -152,7 +152,7 @@
 
 ### Paso 1: Exportar modelo desde Unity
 - Exportar VBOT2.0 como `.fbx` desde Unity (`Assets > Export Package` o copiar el .fbx original)
-- Ruta original: `Assets/Invector-3rdPersonController_LITE/3D Models/Characters/Invector@V-Bot 2.0/`
+- Ruta original: `Assets/ThirdParty/Invector-3rdPersonController_LITE/3D Models/Characters/Invector@V-Bot 2.0/`
 
 ### Paso 2: Importar en Blender
 - Abrir Blender (con MCP server activo)
