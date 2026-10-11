@@ -34,7 +34,7 @@ El controlador de jugador es un port del **Invector 3rd Person Controller LITE**
 ### Bloqueantes conocidos
 
 - El parámetro `IsSliding` no existe en el Animator Controller en uso (`Invector@BasicLocomotion.controller`), pero `PlayerAnimator` lo escribe cada frame → warnings en consola y slide sin animación.
-- `Assets/Scripts/Player/Animators/DefaultPlayerController.controller` está vacío (0 estados) y no lo usa ninguna escena.
+- `Assets/Animations/Characters/DefaultPlayerController.controller` está vacío (0 estados) y no lo usa ninguna escena.
 - No hay prefab de Player: el jugador vive suelto en `Assets/Scenes/PlayerTestScene.unity`. Requisito previo para la FASE 3 (multijugador).
 
 ---

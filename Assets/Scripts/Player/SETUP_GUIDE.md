@@ -12,7 +12,7 @@ Esto genera el AnimatorController con:
 - Estados básicos (Idle, Walk, Run, Sprint, Jump, Fall)
 - Transiciones automáticas
 
-**Guardado en:** `Assets/Scripts/Player/Animators/DefaultPlayerController.controller`
+**Guardado en:** `Assets/Animations/Characters/DefaultPlayerController.controller`
 
 ---
 

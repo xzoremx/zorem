@@ -12,13 +12,11 @@ Assets/Scripts/Player/
 │   ├── QuickPlayerSetup.cs    (Menú rápido de setup)
 │   ├── PlayerSetupEditor.cs   (Ventana de configuración)
 │   └── AnimatorSetup.cs       (Generador de AnimatorController)
-├── Animators/
-│   └── DefaultPlayerController.controller (Auto-generado)
 ├── SETUP_GUIDE.md             (Guía de configuración)
 └── README.md                  (Este archivo)
 ```
 
-La cámara (`ThirdPersonCamera.cs`, orbital con collision avoidance) vive en `Assets/Scripts/Camera/`.
+La cámara (`ThirdPersonCamera.cs`, orbital con collision avoidance) vive en `Assets/Scripts/Camera/` y el `DefaultPlayerController.controller` (auto-generado) en `Assets/Animations/Characters/`.
 
 ## 🔗 Jerarquía de Herencia
 
