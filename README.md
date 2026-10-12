@@ -69,7 +69,7 @@ ZoremGame/
 │   │   └── PlayerTestScene.unity   # Escena de pruebas de locomoción
 │   ├── Settings/           # Assets de configuración de URP
 │   ├── ThirdParty/
-│   │   └── Invector-3rdPersonController_LITE/   # Asset base: modelo VBOT, animator
+│   │   └── Invector-3rdPersonController_LITE/   # Asset base: modelo VBOT, animator, escena demo
 │   └── Scripts/
 │       ├── Camera/         # ThirdPersonCamera
 │       ├── Editor/         # TerrainLandscapeBuilder, TestPlaygroundBuilder, UrpMaterialFixer
