@@ -212,4 +212,4 @@ Disponibles desde el menú `ZoremGame` en Unity:
 - Python: `3.10+` + `uv` / `uvx` (para MCP for Unity y `blender-mcp`)
 - Git LFS instalado antes de clonar: los `.blend`, texturas, modelos, audio, video, fuentes y PDFs se guardan con LFS (ver `.gitattributes`). Sin LFS, Unity recibe punteros de texto en vez de los archivos.
 
-El paquete `com.coplaydev.unity-mcp` viene embebido en `Packages/`, así que no requiere instalación aparte. Solo hay que ajustar la ruta de `uvx` en `.mcp.json` según tu instalación local.
+El paquete `com.coplaydev.unity-mcp` viene embebido en `Packages/`, así que no requiere instalación aparte. Es la v9.6.5 con parches locales para que compile en Unity 6.5 (31 archivos, sobre todo llamadas a `GetInstanceID()` sustituidas): no reemplazarlo por la versión de git o del registry sin portar esos cambios. Solo hay que ajustar la ruta de `uvx` en `.mcp.json` según tu instalación local.
